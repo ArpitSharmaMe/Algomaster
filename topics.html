@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOMASTER - Topics</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/topics.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">ALGOMASTER</div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="topics.html" class="active">Topics</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="topics-section">
+                <div class="topics-header">
+                    <h1 class="topics-title">Explore All Topics</h1>
+                    <p class="topics-subtitle">Browse through our comprehensive collection of computer science subjects. Each topic includes 30 curated questions to test your knowledge.</p>
+                    
+                    <div class="topics-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-book-open"></i>
+                            <div>
+                                <h3>14</h3>
+                                <p>Subjects</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-question-circle"></i>
+                            <div>
+                                <h3>420</h3>
+                                <p>Total Questions</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>30</h3>
+                                <p>Minutes Each</p>
+                            </div>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h3>5</h3>
+                                <p>Difficulty Levels</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search and Filter -->
+                <div class="topics-controls">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="topicSearch" placeholder="Search topics...">
+                    </div>
+                    <div class="filter-controls">
+                        <select id="difficultyFilter">
+                            <option value="all">All Difficulties</option>
+                            <option value="beginner">Beginner</option>
+                            <option value="intermediate">Intermediate</option>
+                            <option value="advanced">Advanced</option>
+                        </select>
+                        <select id="categoryFilter">
+                            <option value="all">All Categories</option>
+                            <option value="programming">Programming</option>
+                            <option value="theory">Theory</option>
+                            <option value="systems">Systems</option>
+                            <option value="emerging">Emerging Tech</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Topics Grid -->
+                <div class="topics-grid" id="topicsGrid">
+                    <!-- Topics will be dynamically loaded from JavaScript -->
+                </div>
+                
+                <!-- Popular Topics Section -->
+                <div class="popular-topics">
+                    <h2><i class="fas fa-fire"></i> Most Popular Topics</h2>
+                    <div class="popular-grid">
+                        <div class="popular-topic-card" data-topic="algorithms">
+                            <div class="popular-badge">Most Popular</div>
+                            <h3>Data Structures & Algorithms</h3>
+                            <p>Master the foundation of efficient programming</p>
+                            <div class="popular-stats">
+                                <span><i class="fas fa-users"></i> 15,240 takers</span>
+                                <span><i class="fas fa-star"></i> 4.8/5</span>
+                            </div>
+                        </div>
+                        <div class="popular-topic-card" data-topic="python">
+                            <div class="popular-badge">Trending</div>
+                            <h3>Python Programming</h3>
+                            <p>Learn versatile programming with Python</p>
+                            <div class="popular-stats">
+                                <span><i class="fas fa-users"></i> 12,850 takers</span>
+                                <span><i class="fas fa-star"></i> 4.7/5</span>
+                            </div>
+                        </div>
+                        <div class="popular-topic-card" data-topic="webdev">
+                            <div class="popular-badge">High Demand</div>
+                            <h3>Web Development</h3>
+                            <p>Build modern web applications</p>
+                            <div class="popular-stats">
+                                <span><i class="fas fa-users"></i> 11,920 takers</span>
+                                <span><i class="fas fa-star"></i> 4.6/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2023 ALGOMASTER. All rights reserved.
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+    <script src="js/topics.js"></script>
+</body>
+</html>

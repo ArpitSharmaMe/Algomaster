@@ -1,0 +1,457 @@
+{
+  "subject": "Artificial Intelligence",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is Artificial Intelligence?",
+      "options": [
+        "Machines simulating human intelligence",
+        "Human intelligence only",
+        "Animal intelligence",
+        "Natural intelligence"
+      ],
+      "correctAnswer": 0,
+      "explanation": "AI enables machines to simulate human intelligence processes like learning, reasoning, problem-solving.",
+      "hint": "Think about machine intelligence.",
+      "difficulty": "easy",
+      "topic": "AI Basics"
+    },
+    {
+      "id": 2,
+      "text": "Which type of AI performs specific tasks?",
+      "options": [
+        "Narrow AI",
+        "General AI",
+        "Super AI",
+        "Weak AI"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Narrow AI (Weak AI) is designed for specific tasks like chess playing, facial recognition.",
+      "hint": "Think about task-specific AI.",
+      "difficulty": "easy",
+      "topic": "AI Types"
+    },
+    {
+      "id": 3,
+      "text": "What is machine learning?",
+      "options": [
+        "AI subset where machines learn from data",
+        "Manual programming",
+        "Rule-based systems",
+        "Expert systems"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Machine learning is AI subset where algorithms learn patterns from data without explicit programming.",
+      "hint": "Think about learning from data.",
+      "difficulty": "easy",
+      "topic": "Machine Learning"
+    },
+    {
+      "id": 4,
+      "text": "Which learning uses labeled data?",
+      "options": [
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Reinforcement Learning",
+        "Semi-supervised Learning"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Supervised learning uses labeled data with input-output pairs for training.",
+      "hint": "Think about labeled training data.",
+      "difficulty": "medium",
+      "topic": "Learning Types"
+    },
+    {
+      "id": 5,
+      "text": "What is neural network?",
+      "options": [
+        "Computing system inspired by brain",
+        "Network cables",
+        "Social network",
+        "Computer network"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Neural network is computing system inspired by biological neural networks in brains.",
+      "hint": "Think about brain-inspired systems.",
+      "difficulty": "medium",
+      "topic": "Neural Networks"
+    },
+    {
+      "id": 6,
+      "text": "Which algorithm is used for classification?",
+      "options": [
+        "Decision Tree",
+        "K-Means",
+        "PCA",
+        "Apriori"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Decision Tree is supervised learning algorithm used for classification tasks.",
+      "hint": "Think about tree-based classification.",
+      "difficulty": "medium",
+      "topic": "Algorithms"
+    },
+    {
+      "id": 7,
+      "text": "What is deep learning?",
+      "options": [
+        "Neural networks with multiple layers",
+        "Shallow learning",
+        "Simple algorithms",
+        "Rule-based systems"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Deep learning uses neural networks with many layers (deep neural networks).",
+      "hint": "Think about multi-layer networks.",
+      "difficulty": "medium",
+      "topic": "Deep Learning"
+    },
+    {
+      "id": 8,
+      "text": "Which learning finds patterns in unlabeled data?",
+      "options": [
+        "Unsupervised Learning",
+        "Supervised Learning",
+        "Reinforcement Learning",
+        "Semi-supervised Learning"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Unsupervised learning finds patterns in unlabeled data without predefined categories.",
+      "hint": "Think about pattern discovery.",
+      "difficulty": "medium",
+      "topic": "Learning Types"
+    },
+    {
+      "id": 9,
+      "text": "What is natural language processing?",
+      "options": [
+        "AI understanding human language",
+        "Computer languages",
+        "Programming languages",
+        "Network protocols"
+      ],
+      "correctAnswer": 0,
+      "explanation": "NLP enables computers to understand, interpret, and generate human language.",
+      "hint": "Think about language understanding.",
+      "difficulty": "medium",
+      "topic": "NLP"
+    },
+    {
+      "id": 10,
+      "text": "Which algorithm is used for clustering?",
+      "options": [
+        "K-Means",
+        "Linear Regression",
+        "Decision Tree",
+        "SVM"
+      ],
+      "correctAnswer": 0,
+      "explanation": "K-Means is unsupervised learning algorithm used for clustering similar data points.",
+      "hint": "Think about grouping similar data.",
+      "difficulty": "medium",
+      "topic": "Algorithms"
+    },
+    {
+      "id": 11,
+      "text": "What is computer vision?",
+      "options": [
+        "AI interpreting visual information",
+        "Computer display",
+        "Monitor technology",
+        "Graphics card"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Computer vision enables computers to interpret and understand visual information from world.",
+      "hint": "Think about visual understanding.",
+      "difficulty": "medium",
+      "topic": "Computer Vision"
+    },
+    {
+      "id": 12,
+      "text": "Which learning uses rewards and punishments?",
+      "options": [
+        "Reinforcement Learning",
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Semi-supervised Learning"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Reinforcement learning uses reward/punishment system for learning through trial and error.",
+      "hint": "Think about reward-based learning.",
+      "difficulty": "hard",
+      "topic": "Learning Types"
+    },
+    {
+      "id": 13,
+      "text": "What is overfitting?",
+      "options": [
+        "Model learns training data too well",
+        "Model underperforms",
+        "Model generalizes well",
+        "Model is too simple"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Overfitting occurs when model learns training data too well, including noise, and performs poorly on new data.",
+      "hint": "Think about memorizing training data.",
+      "difficulty": "hard",
+      "topic": "Model Evaluation"
+    },
+    {
+      "id": 14,
+      "text": "Which network is used for image recognition?",
+      "options": [
+        "CNN",
+        "RNN",
+        "MLP",
+        "GAN"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CNN (Convolutional Neural Network) is commonly used for image recognition tasks.",
+      "hint": "Think about image processing networks.",
+      "difficulty": "hard",
+      "topic": "Neural Networks"
+    },
+    {
+      "id": 15,
+      "text": "What is supervised learning?",
+      "options": [
+        "Learning from labeled data",
+        "Learning from unlabeled data",
+        "Learning from rewards",
+        "Learning from patterns"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Supervised learning uses labeled input-output pairs to train models.",
+      "hint": "Think about guided learning.",
+      "difficulty": "easy",
+      "topic": "Learning Types"
+    },
+    {
+      "id": 16,
+      "text": "Which algorithm predicts continuous values?",
+      "options": [
+        "Linear Regression",
+        "Logistic Regression",
+        "Decision Tree",
+        "K-NN"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Linear regression predicts continuous numerical values.",
+      "hint": "Think about numerical prediction.",
+      "difficulty": "medium",
+      "topic": "Algorithms"
+    },
+    {
+      "id": 17,
+      "text": "What is feature engineering?",
+      "options": [
+        "Creating/selecting input variables",
+        "Building models",
+        "Training models",
+        "Testing models"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Feature engineering creates/selects relevant input variables (features) for machine learning models.",
+      "hint": "Think about input variable preparation.",
+      "difficulty": "hard",
+      "topic": "Data Preparation"
+    },
+    {
+      "id": 18,
+      "text": "Which learning uses both labeled and unlabeled data?",
+      "options": [
+        "Semi-supervised Learning",
+        "Supervised Learning",
+        "Unsupervised Learning",
+        "Reinforcement Learning"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Semi-supervised learning uses small amount of labeled data and large amount of unlabeled data.",
+      "hint": "Think about mixed data learning.",
+      "difficulty": "hard",
+      "topic": "Learning Types"
+    },
+    {
+      "id": 19,
+      "text": "What is transfer learning?",
+      "options": [
+        "Using pre-trained model for new task",
+        "Training from scratch",
+        "Manual programming",
+        "Rule-based system"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Transfer learning uses knowledge from pre-trained model on new, related task.",
+      "hint": "Think about knowledge transfer.",
+      "difficulty": "hard",
+      "topic": "Advanced ML"
+    },
+    {
+      "id": 20,
+      "text": "Which network handles sequential data?",
+      "options": [
+        "RNN",
+        "CNN",
+        "MLP",
+        "GAN"
+      ],
+      "correctAnswer": 0,
+      "explanation": "RNN (Recurrent Neural Network) handles sequential data like time series, text.",
+      "hint": "Think about sequence processing.",
+      "difficulty": "hard",
+      "topic": "Neural Networks"
+    },
+    {
+      "id": 21,
+      "text": "What is bias in AI?",
+      "options": [
+        "Systematic error in predictions",
+        "Model accuracy",
+        "Data size",
+        "Algorithm speed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bias refers to systematic errors in predictions due to incorrect assumptions in learning algorithm.",
+      "hint": "Think about systematic error.",
+      "difficulty": "hard",
+      "topic": "AI Ethics"
+    },
+    {
+      "id": 22,
+      "text": "Which algorithm finds association rules?",
+      "options": [
+        "Apriori",
+        "K-Means",
+        "SVM",
+        "Decision Tree"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Apriori algorithm finds association rules in data (market basket analysis).",
+      "hint": "Think about rule discovery.",
+      "difficulty": "hard",
+      "topic": "Algorithms"
+    },
+    {
+      "id": 23,
+      "text": "What is ensemble learning?",
+      "options": [
+        "Combining multiple models",
+        "Single model",
+        "Simple algorithm",
+        "Basic model"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Ensemble learning combines multiple models to improve predictions.",
+      "hint": "Think about model combination.",
+      "difficulty": "hard",
+      "topic": "Advanced ML"
+    },
+    {
+      "id": 24,
+      "text": "Which is a dimensionality reduction technique?",
+      "options": [
+        "PCA",
+        "K-Means",
+        "Decision Tree",
+        "SVM"
+      ],
+      "correctAnswer": 0,
+      "explanation": "PCA (Principal Component Analysis) reduces dimensionality while preserving variance.",
+      "hint": "Think about feature reduction.",
+      "difficulty": "hard",
+      "topic": "Data Preparation"
+    },
+    {
+      "id": 25,
+      "text": "What is gradient descent?",
+      "options": [
+        "Optimization algorithm",
+        "Classification algorithm",
+        "Clustering algorithm",
+        "Association algorithm"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Gradient descent optimizes model parameters by minimizing cost function.",
+      "hint": "Think about optimization.",
+      "difficulty": "hard",
+      "topic": "Optimization"
+    },
+    {
+      "id": 26,
+      "text": "Which learning imitates human brain?",
+      "options": [
+        "Neural Networks",
+        "Decision Trees",
+        "Linear Regression",
+        "K-Means"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Neural networks are inspired by human brain's neural structure.",
+      "hint": "Think about brain imitation.",
+      "difficulty": "medium",
+      "topic": "Neural Networks"
+    },
+    {
+      "id": 27,
+      "text": "What is chatbot?",
+      "options": [
+        "AI program for conversation",
+        "Search engine",
+        "Database",
+        "Operating system"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Chatbot is AI program that simulates human conversation through text or voice.",
+      "hint": "Think about conversational AI.",
+      "difficulty": "easy",
+      "topic": "Applications"
+    },
+    {
+      "id": 28,
+      "text": "Which is a classification algorithm?",
+      "options": [
+        "SVM",
+        "K-Means",
+        "PCA",
+        "Linear Regression"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SVM (Support Vector Machine) is supervised learning algorithm for classification.",
+      "hint": "Think about classification boundary.",
+      "difficulty": "hard",
+      "topic": "Algorithms"
+    },
+    {
+      "id": 29,
+      "text": "What is training data?",
+      "options": [
+        "Data used to train model",
+        "Data used for testing",
+        "Production data",
+        "Validation data"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Training data is used to train machine learning model.",
+      "hint": "Think about model learning data.",
+      "difficulty": "easy",
+      "topic": "Data"
+    },
+    {
+      "id": 30,
+      "text": "Which generates new data similar to training data?",
+      "options": [
+        "GAN",
+        "CNN",
+        "RNN",
+        "MLP"
+      ],
+      "correctAnswer": 0,
+      "explanation": "GAN (Generative Adversarial Network) generates new data similar to training data.",
+      "hint": "Think about data generation.",
+      "difficulty": "hard",
+      "topic": "Generative Models"
+    }
+  ]
+}

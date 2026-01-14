@@ -1,0 +1,457 @@
+{
+  "subject": "Computer Organization & Architecture",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is the basic unit of information in computing?",
+      "options": [
+        "Byte",
+        "Bit",
+        "Nibble",
+        "Word"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bit (binary digit) is the most basic unit of information in computing, representing 0 or 1.",
+      "hint": "Think about binary representation.",
+      "difficulty": "easy",
+      "topic": "Basic Concepts"
+    },
+    {
+      "id": 2,
+      "text": "Which register holds the memory address of the next instruction?",
+      "options": [
+        "Accumulator",
+        "Program Counter",
+        "Instruction Register",
+        "Memory Address Register"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Program Counter (PC) holds the address of the next instruction to be executed.",
+      "hint": "Think about instruction sequencing.",
+      "difficulty": "easy",
+      "topic": "CPU Registers"
+    },
+    {
+      "id": 3,
+      "text": "What is the purpose of the ALU?",
+      "options": [
+        "Perform arithmetic and logic operations",
+        "Store data temporarily",
+        "Control instruction execution",
+        "Manage memory"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ALU (Arithmetic Logic Unit) performs arithmetic and logical operations on data.",
+      "hint": "Think about computation unit.",
+      "difficulty": "easy",
+      "topic": "CPU Components"
+    },
+    {
+      "id": 4,
+      "text": "Which memory type is fastest?",
+      "options": [
+        "Cache",
+        "RAM",
+        "ROM",
+        "Hard Disk"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cache memory is the fastest but smallest memory, located close to CPU.",
+      "hint": "Think about memory hierarchy.",
+      "difficulty": "easy",
+      "topic": "Memory Hierarchy"
+    },
+    {
+      "id": 5,
+      "text": "What does CPU stand for?",
+      "options": [
+        "Central Processing Unit",
+        "Computer Processing Unit",
+        "Central Program Unit",
+        "Computer Program Unit"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CPU stands for Central Processing Unit, the brain of the computer.",
+      "hint": "Think about the main processor.",
+      "difficulty": "easy",
+      "topic": "Basic Concepts"
+    },
+    {
+      "id": 6,
+      "text": "Which addressing mode specifies the operand directly?",
+      "options": [
+        "Immediate Addressing",
+        "Direct Addressing",
+        "Indirect Addressing",
+        "Register Addressing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Direct Addressing mode specifies the memory address of the operand directly.",
+      "hint": "Think about direct memory access.",
+      "difficulty": "medium",
+      "topic": "Addressing Modes"
+    },
+    {
+      "id": 7,
+      "text": "What is the purpose of pipelining?",
+      "options": [
+        "Increase CPU throughput",
+        "Reduce memory size",
+        "Increase clock speed",
+        "Reduce power consumption"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Pipelining increases CPU throughput by overlapping execution of multiple instructions.",
+      "hint": "Think about parallel instruction processing.",
+      "difficulty": "medium",
+      "topic": "Pipeline"
+    },
+    {
+      "id": 8,
+      "text": "Which bus carries memory addresses?",
+      "options": [
+        "Data Bus",
+        "Address Bus",
+        "Control Bus",
+        "System Bus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Address Bus carries memory addresses from CPU to memory.",
+      "hint": "Think about address transmission.",
+      "difficulty": "easy",
+      "topic": "Buses"
+    },
+    {
+      "id": 9,
+      "text": "What is virtual memory?",
+      "options": [
+        "Extension of physical memory using disk",
+        "Faster than RAM memory",
+        "CPU cache memory",
+        "ROM memory"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Virtual memory extends physical memory using disk storage, allowing larger programs to run.",
+      "hint": "Think about memory extension.",
+      "difficulty": "medium",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 10,
+      "text": "Which component performs I/O operations?",
+      "options": [
+        "ALU",
+        "Control Unit",
+        "I/O Processor",
+        "Cache"
+      ],
+      "correctAnswer": 2,
+      "explanation": "I/O Processor (or I/O Controller) handles input/output operations.",
+      "hint": "Think about peripheral management.",
+      "difficulty": "medium",
+      "topic": "I/O Systems"
+    },
+    {
+      "id": 11,
+      "text": "What is RISC architecture?",
+      "options": [
+        "Reduced Instruction Set Computer",
+        "Random Instruction Set Computer",
+        "Reduced Instruction System Computer",
+        "Random Instruction System Computer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "RISC stands for Reduced Instruction Set Computer, with simple, fixed-length instructions.",
+      "hint": "Think about simplified instruction set.",
+      "difficulty": "medium",
+      "topic": "Architecture Types"
+    },
+    {
+      "id": 12,
+      "text": "Which cache mapping technique is most flexible?",
+      "options": [
+        "Direct Mapping",
+        "Associative Mapping",
+        "Set-associative Mapping",
+        "Block Mapping"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Fully Associative Mapping is most flexible as any block can go anywhere in cache.",
+      "hint": "Think about cache placement flexibility.",
+      "difficulty": "hard",
+      "topic": "Cache Memory"
+    },
+    {
+      "id": 13,
+      "text": "What is the function of the control unit?",
+      "options": [
+        "Directs operation of processor",
+        "Performs arithmetic operations",
+        "Stores data",
+        "Manages memory"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Control Unit directs operation of processor, controlling flow of data.",
+      "hint": "Think about processor coordination.",
+      "difficulty": "easy",
+      "topic": "CPU Components"
+    },
+    {
+      "id": 14,
+      "text": "Which number system is base-16?",
+      "options": [
+        "Binary",
+        "Decimal",
+        "Octal",
+        "Hexadecimal"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Hexadecimal is base-16 number system using digits 0-9 and A-F.",
+      "hint": "Think about 16-based system.",
+      "difficulty": "easy",
+      "topic": "Number Systems"
+    },
+    {
+      "id": 15,
+      "text": "What is DMA?",
+      "options": [
+        "Direct Memory Access",
+        "Direct Memory Allocation",
+        "Direct Memory Addressing",
+        "Direct Memory Architecture"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DMA (Direct Memory Access) allows devices to access memory without CPU intervention.",
+      "hint": "Think about memory access without CPU.",
+      "difficulty": "medium",
+      "topic": "I/O Systems"
+    },
+    {
+      "id": 16,
+      "text": "Which flip-flop has two stable states?",
+      "options": [
+        "SR Flip-flop",
+        "JK Flip-flop",
+        "D Flip-flop",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "All these flip-flops have two stable states (0 and 1).",
+      "hint": "Think about bistable multivibrators.",
+      "difficulty": "medium",
+      "topic": "Digital Logic"
+    },
+    {
+      "id": 17,
+      "text": "What is the purpose of an interrupt?",
+      "options": [
+        "Signal CPU to handle event",
+        "Stop CPU permanently",
+        "Increase CPU speed",
+        "Reset CPU"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Interrupts signal CPU to handle urgent events, saving current state and executing interrupt handler.",
+      "hint": "Think about event signaling mechanism.",
+      "difficulty": "medium",
+      "topic": "Interrupts"
+    },
+    {
+      "id": 18,
+      "text": "Which memory is non-volatile?",
+      "options": [
+        "RAM",
+        "Cache",
+        "ROM",
+        "Register"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ROM (Read-Only Memory) is non-volatile, retaining data without power.",
+      "hint": "Think about permanent storage.",
+      "difficulty": "easy",
+      "topic": "Memory Types"
+    },
+    {
+      "id": 19,
+      "text": "What is clock speed measured in?",
+      "options": [
+        "Bytes",
+        "Hertz",
+        "Bits",
+        "Watts"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Clock speed is measured in Hertz (Hz), indicating cycles per second.",
+      "hint": "Think about frequency unit.",
+      "difficulty": "easy",
+      "topic": "Performance"
+    },
+    {
+      "id": 20,
+      "text": "Which addressing mode uses a register to hold address?",
+      "options": [
+        "Immediate",
+        "Direct",
+        "Register Indirect",
+        "Indexed"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Register Indirect Addressing uses a register to hold the memory address of the operand.",
+      "hint": "Think about register-based addressing.",
+      "difficulty": "hard",
+      "topic": "Addressing Modes"
+    },
+    {
+      "id": 21,
+      "text": "What is a multiplexer?",
+      "options": [
+        "Selects one input from many",
+        "Combines multiple inputs",
+        "Amplifies signal",
+        "Stores data"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Multiplexer (MUX) selects one of several input signals and forwards it.",
+      "hint": "Think about signal selector.",
+      "difficulty": "medium",
+      "topic": "Digital Logic"
+    },
+    {
+      "id": 22,
+      "text": "Which RAID level provides mirroring?",
+      "options": [
+        "RAID 0",
+        "RAID 1",
+        "RAID 5",
+        "RAID 6"
+      ],
+      "correctAnswer": 1,
+      "explanation": "RAID 1 provides mirroring, duplicating data across drives.",
+      "hint": "Think about data duplication.",
+      "difficulty": "hard",
+      "topic": "Storage"
+    },
+    {
+      "id": 23,
+      "text": "What is superscalar architecture?",
+      "options": [
+        "Multiple execution units",
+        "Higher clock speed",
+        "Larger cache",
+        "More registers"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Superscalar architecture has multiple execution units to execute multiple instructions simultaneously.",
+      "hint": "Think about parallel execution units.",
+      "difficulty": "hard",
+      "topic": "Advanced Architecture"
+    },
+    {
+      "id": 24,
+      "text": "Which gate produces true only if all inputs are true?",
+      "options": [
+        "AND",
+        "OR",
+        "NOT",
+        "XOR"
+      ],
+      "correctAnswer": 0,
+      "explanation": "AND gate produces true (1) only if all inputs are true.",
+      "hint": "Think about logical conjunction.",
+      "difficulty": "easy",
+      "topic": "Logic Gates"
+    },
+    {
+      "id": 25,
+      "text": "What is the purpose of TLB?",
+      "options": [
+        "Cache for page table entries",
+        "Temporary register",
+        "Logic unit",
+        "Memory buffer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "TLB (Translation Lookaside Buffer) caches page table entries for faster virtual-to-physical address translation.",
+      "hint": "Think about address translation cache.",
+      "difficulty": "hard",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 26,
+      "text": "Which component performs floating-point operations?",
+      "options": [
+        "ALU",
+        "FPU",
+        "CU",
+        "MMU"
+      ],
+      "correctAnswer": 1,
+      "explanation": "FPU (Floating-Point Unit) performs floating-point arithmetic operations.",
+      "hint": "Think about decimal number operations.",
+      "difficulty": "medium",
+      "topic": "CPU Components"
+    },
+    {
+      "id": 27,
+      "text": "What is endianness?",
+      "options": [
+        "Byte ordering in memory",
+        "CPU architecture",
+        "Memory size",
+        "Clock speed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Endianness refers to byte ordering in memory (big-endian vs little-endian).",
+      "hint": "Think about byte sequence.",
+      "difficulty": "medium",
+      "topic": "Data Representation"
+    },
+    {
+      "id": 28,
+      "text": "Which memory uses capacitors to store data?",
+      "options": [
+        "SRAM",
+        "DRAM",
+        "ROM",
+        "Flash"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DRAM (Dynamic RAM) uses capacitors to store data, requiring periodic refresh.",
+      "hint": "Think about capacitor-based memory.",
+      "difficulty": "medium",
+      "topic": "Memory Types"
+    },
+    {
+      "id": 29,
+      "text": "What is CISC architecture?",
+      "options": [
+        "Complex Instruction Set Computer",
+        "Compact Instruction Set Computer",
+        "Complex Instruction System Computer",
+        "Compact Instruction System Computer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CISC stands for Complex Instruction Set Computer, with complex, variable-length instructions.",
+      "hint": "Think about complex instruction set.",
+      "difficulty": "medium",
+      "topic": "Architecture Types"
+    },
+    {
+      "id": 30,
+      "text": "Which component translates virtual to physical addresses?",
+      "options": [
+        "ALU",
+        "MMU",
+        "CU",
+        "FPU"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MMU (Memory Management Unit) translates virtual addresses to physical addresses.",
+      "hint": "Think about address translation unit.",
+      "difficulty": "hard",
+      "topic": "Memory Management"
+    }
+  ]
+}

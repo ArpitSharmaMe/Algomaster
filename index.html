@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOMASTER - Quiz Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">ALGOMASTER</div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="hero-section">
+                <h1 class="hero-title">Master Computer Science Concepts</h1>
+                <p class="hero-subtitle">Test your knowledge across 14 essential computer science subjects. Each quiz contains 30 carefully crafted questions to challenge and enhance your understanding.</p>
+                
+                <div class="quiz-selector">
+                    <h2><i class="fas fa-puzzle-piece selector-icon"></i> Select Your Quiz Subject</h2>
+                    
+                    <select class="subject-select" id="subjectSelect">
+                        <option value="">Select a Subject</option>
+                        <option value="programming">C-Programming</option>
+                        <option value="objectprograming">Object Oriented-Programming</option>
+                        <option value="algorithms">Data Structures and Algorithms</option>
+                        <option value="python">Python Programming</option>
+                        <option value="webdev">Web Development</option>
+                        <option value="coa">Computer Organization and Architecture</option>
+                        <option value="osys">Operating Systems</option>
+                        <option value="dbms">Database Management</option>
+                        <option value="cn">Computer Networks</option>
+                        <option value="software">Software Engineering</option>
+                        <option value="cloudcomp">Cloud Computing</option>
+                        <option value="ai">Artificial Intelligence</option>
+                        <option value="iot">Internet of Things</option>
+                    </select>
+                    
+                    <!-- Subject Description -->
+                    <div class="subject-description" id="subjectDescription">
+                        <p>Select a subject from the dropdown to see details about the quiz</p>
+                    </div>
+                    
+                    <div class="quiz-info">
+                        <div class="info-item">
+                            <div class="info-value" id="selectedSubject">14</div>
+                            <div class="info-label">Subjects</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-value">30</div>
+                            <div class="info-label">Questions Each</div>
+                        </div>
+                    </div>
+                    
+                    <button class="start-btn" id="startQuizBtn" disabled>
+                        <i class="fas fa-play-circle"></i> Start Quiz
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2023 ALGOMASTER. All rights reserved.
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

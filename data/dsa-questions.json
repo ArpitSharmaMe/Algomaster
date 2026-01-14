@@ -1,0 +1,457 @@
+{
+  "subject": "Data Structures and Algorithms",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which data structure follows LIFO (Last In First Out) principle?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Linked List",
+        "Tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stack follows LIFO principle where the last element added is the first one to be removed.",
+      "hint": "Think about a stack of plates.",
+      "difficulty": "easy",
+      "topic": "Basic Data Structures"
+    },
+    {
+      "id": 2,
+      "text": "What is the time complexity of binary search on a sorted array of n elements?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Binary search repeatedly divides the search interval in half, resulting in O(log n) time complexity.",
+      "hint": "Think about dividing search space in half each time.",
+      "difficulty": "easy",
+      "topic": "Time Complexity"
+    },
+    {
+      "id": 3,
+      "text": "Which algorithm is used to find the shortest path in an unweighted graph?",
+      "options": [
+        "Dijkstra's Algorithm",
+        "Breadth-First Search",
+        "Depth-First Search",
+        "Prim's Algorithm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "BFS (Breadth-First Search) is used to find the shortest path in unweighted graphs as it explores all neighbors at the present depth before moving to the next level.",
+      "hint": "Think about level-wise traversal.",
+      "difficulty": "medium",
+      "topic": "Graph Algorithms"
+    },
+    {
+      "id": 4,
+      "text": "What is the time complexity of inserting an element at the beginning of an array?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Inserting at the beginning of an array requires shifting all existing elements, resulting in O(n) time complexity.",
+      "hint": "Think about element shifting requirement.",
+      "difficulty": "easy",
+      "topic": "Arrays"
+    },
+    {
+      "id": 5,
+      "text": "Which data structure is used for implementing recursion?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Array",
+        "Linked List"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stack is used to manage function calls in recursion. Each recursive call is pushed onto the call stack.",
+      "hint": "Think about how function calls are managed.",
+      "difficulty": "medium",
+      "topic": "Recursion"
+    },
+    {
+      "id": 6,
+      "text": "What is the time complexity of quicksort in worst case?",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Quicksort has worst-case time complexity O(n²) when the pivot is always the smallest or largest element.",
+      "hint": "Think about unbalanced partitions.",
+      "difficulty": "medium",
+      "topic": "Sorting Algorithms"
+    },
+    {
+      "id": 7,
+      "text": "Which data structure uses hash functions for insertion and retrieval?",
+      "options": [
+        "Binary Search Tree",
+        "Heap",
+        "Hash Table",
+        "Linked List"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Hash tables use hash functions to compute an index into an array of buckets or slots from which the desired value can be found.",
+      "hint": "Think about key-value storage with fast access.",
+      "difficulty": "easy",
+      "topic": "Hash Tables"
+    },
+    {
+      "id": 8,
+      "text": "What is the main advantage of a doubly linked list over a singly linked list?",
+      "options": [
+        "Less memory usage",
+        "Faster insertion",
+        "Can be traversed in both directions",
+        "Better cache locality"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Doubly linked lists can be traversed in both forward and backward directions, unlike singly linked lists which can only be traversed forward.",
+      "hint": "Think about traversal direction.",
+      "difficulty": "easy",
+      "topic": "Linked Lists"
+    },
+    {
+      "id": 9,
+      "text": "Which algorithm is used to find the minimum spanning tree of a graph?",
+      "options": [
+        "Dijkstra's Algorithm",
+        "Kruskal's Algorithm",
+        "Bellman-Ford Algorithm",
+        "Floyd-Warshall Algorithm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kruskal's algorithm finds a minimum spanning tree for a weighted undirected graph by adding edges in increasing weight order.",
+      "hint": "Think about adding edges by weight.",
+      "difficulty": "hard",
+      "topic": "Graph Algorithms"
+    },
+    {
+      "id": 10,
+      "text": "What is the space complexity of merge sort?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Merge sort requires O(n) additional space for the temporary arrays used during merging.",
+      "hint": "Think about additional arrays needed for merging.",
+      "difficulty": "medium",
+      "topic": "Sorting Algorithms"
+    },
+    {
+      "id": 11,
+      "text": "Which data structure is best for implementing a priority queue?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Heap",
+        "Stack"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Heap is the most efficient data structure for implementing a priority queue as it provides O(log n) for insertion and extraction.",
+      "hint": "Think about maintaining order with efficient operations.",
+      "difficulty": "medium",
+      "topic": "Heaps"
+    },
+    {
+      "id": 12,
+      "text": "What is the time complexity of searching in a balanced binary search tree?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In a balanced BST, each comparison skips about half of the remaining tree, resulting in O(log n) search time.",
+      "hint": "Think about height of balanced tree.",
+      "difficulty": "easy",
+      "topic": "Trees"
+    },
+    {
+      "id": 13,
+      "text": "Which algorithm paradigm is used in quicksort?",
+      "options": [
+        "Divide and Conquer",
+        "Dynamic Programming",
+        "Greedy",
+        "Backtracking"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Quicksort uses divide and conquer approach: divide the array into subarrays, conquer by sorting them, and combine the results.",
+      "hint": "Think about partitioning and recursion.",
+      "difficulty": "medium",
+      "topic": "Algorithm Paradigms"
+    },
+    {
+      "id": 14,
+      "text": "What is the purpose of memoization in dynamic programming?",
+      "options": [
+        "To store previously computed results",
+        "To reduce space complexity",
+        "To sort data",
+        "To traverse graphs"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Memoization stores the results of expensive function calls and returns the cached result when the same inputs occur again.",
+      "hint": "Think about avoiding repeated calculations.",
+      "difficulty": "hard",
+      "topic": "Dynamic Programming"
+    },
+    {
+      "id": 15,
+      "text": "Which traversal visits root node first in a binary tree?",
+      "options": [
+        "Inorder",
+        "Preorder",
+        "Postorder",
+        "Level order"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Preorder traversal visits the root node first, then left subtree, then right subtree.",
+      "hint": "Think about root-left-right order.",
+      "difficulty": "easy",
+      "topic": "Tree Traversal"
+    },
+    {
+      "id": 16,
+      "text": "What is the time complexity of heapify operation?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Building a heap from an array can be done in O(n) time using the heapify operation.",
+      "hint": "Think about linear time heap construction.",
+      "difficulty": "hard",
+      "topic": "Heaps"
+    },
+    {
+      "id": 17,
+      "text": "Which data structure is used in breadth-first search?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Heap",
+        "Hash Table"
+      ],
+      "correctAnswer": 1,
+      "explanation": "BFS uses a queue to keep track of nodes to visit, processing nodes in the order they were discovered.",
+      "hint": "Think about FIFO principle.",
+      "difficulty": "medium",
+      "topic": "Graph Traversal"
+    },
+    {
+      "id": 18,
+      "text": "What is the main characteristic of a greedy algorithm?",
+      "options": [
+        "Always finds optimal solution",
+        "Makes locally optimal choice",
+        "Uses recursion",
+        "Has polynomial time complexity"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Greedy algorithms make the locally optimal choice at each stage with the hope of finding a global optimum.",
+      "hint": "Think about immediate best choice.",
+      "difficulty": "medium",
+      "topic": "Algorithm Paradigms"
+    },
+    {
+      "id": 19,
+      "text": "Which sorting algorithm has O(n) time complexity in best case?",
+      "options": [
+        "Bubble Sort",
+        "Insertion Sort",
+        "Selection Sort",
+        "Merge Sort"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Insertion sort has O(n) best-case time complexity when the array is already sorted.",
+      "hint": "Think about adaptive sorting algorithms.",
+      "difficulty": "medium",
+      "topic": "Sorting Algorithms"
+    },
+    {
+      "id": 20,
+      "text": "What is the height of a complete binary tree with n nodes?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A complete binary tree with n nodes has height approximately log₂(n), making it O(log n).",
+      "hint": "Think about exponential growth in levels.",
+      "difficulty": "medium",
+      "topic": "Trees"
+    },
+    {
+      "id": 21,
+      "text": "Which algorithm is used to detect cycles in a directed graph?",
+      "options": [
+        "Dijkstra's Algorithm",
+        "Depth-First Search",
+        "Breadth-First Search",
+        "Prim's Algorithm"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DFS can be modified to detect cycles in directed graphs by tracking visited nodes and recursion stack.",
+      "hint": "Think about back edges in traversal.",
+      "difficulty": "hard",
+      "topic": "Graph Algorithms"
+    },
+    {
+      "id": 22,
+      "text": "What is the time complexity of union-find with path compression?",
+      "options": [
+        "O(1)",
+        "O(α(n))",
+        "O(log n)",
+        "O(n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Union-find with path compression has amortized time complexity of O(α(n)), where α is the inverse Ackermann function (almost constant).",
+      "hint": "Think about nearly constant time operations.",
+      "difficulty": "hard",
+      "topic": "Disjoint Set"
+    },
+    {
+      "id": 23,
+      "text": "Which data structure is used for implementing a cache with LRU policy?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Doubly Linked List with Hash Map",
+        "Binary Search Tree"
+      ],
+      "correctAnswer": 2,
+      "explanation": "LRU cache is typically implemented using a combination of hash map (for O(1) access) and doubly linked list (for maintaining order).",
+      "hint": "Think about fast access and order maintenance.",
+      "difficulty": "hard",
+      "topic": "System Design"
+    },
+    {
+      "id": 24,
+      "text": "What is the space complexity of depth-first search?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "DFS space complexity is O(n) in worst case due to recursion stack or explicit stack storing all nodes.",
+      "hint": "Think about stack depth in worst case.",
+      "difficulty": "medium",
+      "topic": "Graph Traversal"
+    },
+    {
+      "id": 25,
+      "text": "Which algorithm uses two pointers approach?",
+      "options": [
+        "Binary Search",
+        "Merge Sort",
+        "Finding middle of linked list",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Two pointers technique is used in binary search (low and high), merge sort (left and right), and finding middle of linked list (slow and fast pointers).",
+      "hint": "Think about multiple pointer techniques.",
+      "difficulty": "medium",
+      "topic": "Techniques"
+    },
+    {
+      "id": 26,
+      "text": "What is the time complexity of topological sort?",
+      "options": [
+        "O(1)",
+        "O(V + E)",
+        "O(V log E)",
+        "O(V²)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Topological sort using DFS or Kahn's algorithm has time complexity O(V + E), where V is vertices and E is edges.",
+      "hint": "Think about visiting all vertices and edges once.",
+      "difficulty": "hard",
+      "topic": "Graph Algorithms"
+    },
+    {
+      "id": 27,
+      "text": "Which data structure provides O(1) average case for search, insert, and delete?",
+      "options": [
+        "Binary Search Tree",
+        "Hash Table",
+        "Array",
+        "Linked List"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Hash tables provide O(1) average time complexity for basic operations (insert, delete, search) assuming good hash function.",
+      "hint": "Think about constant time operations on average.",
+      "difficulty": "easy",
+      "topic": "Hash Tables"
+    },
+    {
+      "id": 28,
+      "text": "What is the main use of segment trees?",
+      "options": [
+        "Range queries",
+        "Sorting",
+        "Graph traversal",
+        "String matching"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Segment trees are used for answering range queries (sum, min, max) and allowing point updates in O(log n) time.",
+      "hint": "Think about interval queries.",
+      "difficulty": "hard",
+      "topic": "Advanced Data Structures"
+    },
+    {
+      "id": 29,
+      "text": "Which algorithm paradigm is used in backtracking?",
+      "options": [
+        "Incremental approach",
+        "Trial and error",
+        "Divide and conquer",
+        "All of the above"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Backtracking uses trial and error approach - tries different possibilities and abandons those that fail (backtracks).",
+      "hint": "Think about exploring all possibilities.",
+      "difficulty": "hard",
+      "topic": "Algorithm Paradigms"
+    },
+    {
+      "id": 30,
+      "text": "What is the time complexity of Floyd-Warshall algorithm?",
+      "options": [
+        "O(V)",
+        "O(V²)",
+        "O(V³)",
+        "O(V⁴)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Floyd-Warshall algorithm for finding all pairs shortest paths has time complexity O(V³) due to triple nested loops.",
+      "hint": "Think about three nested loops over vertices.",
+      "difficulty": "hard",
+      "topic": "Graph Algorithms"
+    }
+  ]
+}

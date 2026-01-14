@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOMASTER - Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">ALGOMASTER</div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="contact-section">
+                <!-- Contact Hero -->
+                <div class="contact-hero">
+                    <h1 class="contact-title">Get In Touch</h1>
+                    <p class="contact-subtitle">Have questions, feedback, or need support? We're here to help you with your ALGOMASTER journey.</p>
+                </div>
+                
+                <div class="contact-content">
+                    <!-- Contact Info -->
+                    <div class="contact-info">
+                        <h2>Contact Information</h2>
+                        <p class="info-description">Feel free to reach out through any of these channels</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Email Us</h3>
+                                    <p>arpit18sharma2002@gmail.com</p>
+                                    <p class="method-note">Response within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Live Chat</h3>
+                                    <p>Available Mon-Fri, 9AM-6PM</p>
+                                    <p class="method-note">Click the chat icon in bottom right</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Office</h3>
+                                    <p>Garhi Cantt</p>
+                                    <p class="method-note">Dehradun, Uttarakhand</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h3>Phone</h3>
+                                    <p>+91 7906529891</p>
+                                    <p class="method-note">Business hours only</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Direct Contact Arpit -->
+                        <div class="direct-contact">
+                            <h3><i class="fas fa-user-tie"></i> Contact Arpit Directly</h3>
+                            <div class="direct-contact-info">
+                                <div class="direct-photo">
+                                    <img src="assets/images/arpit-sharma.png" alt="Arpit Sharma" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                    <div class="direct-placeholder">
+                                        <i class="fas fa-user-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="direct-details">
+                                    <h4>Arpit Sharma</h4>
+                                    <p class="direct-role">Founder & Developer</p>
+                                    <p class="direct-email"><i class="fas fa-envelope"></i> arpit18sharma2002@gmail.com</p>
+                                    <div class="direct-social">
+                                        <a href="#" class="social-btn"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-btn"><i class="fab fa-linkedin"></i></a>
+                                        <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
+                                        <a href="#" class="social-btn"><i class="fab fa-codepen"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Send Us a Message</h2>
+                        <p class="form-description">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                                <div class="error-message" id="nameError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                                <div class="error-message" id="emailError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Subject *</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="feedback">Feedback & Suggestions</option>
+                                    <option value="business">Business Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="error-message" id="subjectError"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required placeholder="Type your message here..."></textarea>
+                                <div class="error-message" id="messageError"></div>
+                            </div>
+                            
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <label for="newsletter">Subscribe to our newsletter for updates and tips</label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            
+                            <div class="form-note">
+                                <i class="fas fa-info-circle"></i> Fields marked with * are required
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Help Section -->
+                <div class="help-section">
+                    <h2><i class="fas fa-question-circle"></i> Need Help with Quizzes?</h2>
+                    <p class="help-subtitle">Quick access to get you started with ALGOMASTER</p>
+                    
+                    <div class="help-grid">
+                        <div class="help-card">
+                            <div class="help-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3>Browse Topics</h3>
+                            <p>Explore all available quiz subjects and topics to find what interests you</p>
+                            <a href="topics.html" class="help-btn">
+                                <i class="fas fa-external-link-alt"></i> View Topics
+                            </a>
+                        </div>
+                        
+                        <div class="help-card">
+                            <div class="help-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <h3>Start a Quiz</h3>
+                            <p>Jump right into testing your knowledge with our interactive quizzes</p>
+                            <a href="index.html" class="help-btn">
+                                <i class="fas fa-external-link-alt"></i> Start Quizzing
+                            </a>
+                        </div>
+                        
+                        <div class="help-card">
+                            <div class="help-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Track Progress</h3>
+                            <p>Monitor your quiz scores, improvements, and learning journey</p>
+                            <a href="topics.html" class="help-btn">
+                                <i class="fas fa-external-link-alt"></i> Try Sample Quiz
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- FAQ Section -->
+                <div class="faq-section">
+                    <h2>Frequently Asked Questions</h2>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How many questions are in each quiz?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Each subject contains 30 carefully curated questions covering fundamental to advanced topics in computer science.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I save my quiz progress?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes! Your progress is automatically saved. You can pause and resume quizzes at any time.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Is ALGOMASTER free to use?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, ALGOMASTER is completely free for all users. We believe in making quality computer science education accessible to everyone.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How can I suggest new features?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>We love feedback! Use the contact form above or email us directly at suggestions@algomaster.com.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map Section -->
+                <div class="map-section">
+                    <h2>Our Location</h2>
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h3>Garhi Cantt</h3>
+                            <p>Dehradun, Uttarakhand 248003 </p>
+                            <p class="map-note"><i class="fas fa-clock"></i> Open Mon-Fri: 9:00 AM - 6:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2023 ALGOMASTER. All rights reserved. Created by Arpit Sharma
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-icon">
+            <i class="fas fa-comments"></i>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h3>ALGOMASTER Support</h3>
+                <button class="close-chat" id="closeChat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    <p>Hello! I'm your ALGOMASTER assistant. How can I help you today?</p>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button id="sendChat"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

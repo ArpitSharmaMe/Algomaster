@@ -1,0 +1,457 @@
+{
+  "subject": "Computer Networks",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What does LAN stand for?",
+      "options": [
+        "Local Area Network",
+        "Large Area Network",
+        "Local Access Network",
+        "Large Access Network"
+      ],
+      "correctAnswer": 0,
+      "explanation": "LAN stands for Local Area Network, covering small geographical area like office or building.",
+      "hint": "Think about local network.",
+      "difficulty": "easy",
+      "topic": "Network Types"
+    },
+    {
+      "id": 2,
+      "text": "Which protocol is used for web browsing?",
+      "options": [
+        "HTTP",
+        "FTP",
+        "SMTP",
+        "DNS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HTTP (Hypertext Transfer Protocol) is used for web browsing and transferring web pages.",
+      "hint": "Think about web page transfer.",
+      "difficulty": "easy",
+      "topic": "Protocols"
+    },
+    {
+      "id": 3,
+      "text": "What is the purpose of IP address?",
+      "options": [
+        "Identify device on network",
+        "Encrypt data",
+        "Compress data",
+        "Route emails"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IP address uniquely identifies a device on a network for communication.",
+      "hint": "Think about device identification.",
+      "difficulty": "easy",
+      "topic": "IP Addressing"
+    },
+    {
+      "id": 4,
+      "text": "Which layer of OSI model handles routing?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Network layer (Layer 3) handles routing and logical addressing.",
+      "hint": "Think about routing layer.",
+      "difficulty": "medium",
+      "topic": "OSI Model"
+    },
+    {
+      "id": 5,
+      "text": "What does DNS do?",
+      "options": [
+        "Translates domain names to IP addresses",
+        "Sends emails",
+        "Transfers files",
+        "Manages databases"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DNS (Domain Name System) translates domain names to IP addresses.",
+      "hint": "Think about name resolution.",
+      "difficulty": "easy",
+      "topic": "DNS"
+    },
+    {
+      "id": 6,
+      "text": "Which device operates at network layer?",
+      "options": [
+        "Hub",
+        "Switch",
+        "Router",
+        "Bridge"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Router operates at network layer (Layer 3) of OSI model.",
+      "hint": "Think about routing device.",
+      "difficulty": "medium",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 7,
+      "text": "What is TCP?",
+      "options": [
+        "Connection-oriented protocol",
+        "Connectionless protocol",
+        "Routing protocol",
+        "Email protocol"
+      ],
+      "correctAnswer": 0,
+      "explanation": "TCP (Transmission Control Protocol) is connection-oriented, reliable protocol.",
+      "hint": "Think about reliable transport.",
+      "difficulty": "medium",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 8,
+      "text": "Which port does HTTP use?",
+      "options": [
+        "21",
+        "25",
+        "80",
+        "443"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HTTP uses port 80 for communication.",
+      "hint": "Think about standard web port.",
+      "difficulty": "easy",
+      "topic": "Ports"
+    },
+    {
+      "id": 9,
+      "text": "What is a firewall?",
+      "options": [
+        "Network security system",
+        "Network cable",
+        "Wireless device",
+        "Network printer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Firewall monitors and controls incoming/outgoing network traffic based on security rules.",
+      "hint": "Think about network security.",
+      "difficulty": "easy",
+      "topic": "Security"
+    },
+    {
+      "id": 10,
+      "text": "Which protocol is used for email sending?",
+      "options": [
+        "SMTP",
+        "POP3",
+        "IMAP",
+        "HTTP"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending emails.",
+      "hint": "Think about email sending protocol.",
+      "difficulty": "medium",
+      "topic": "Email Protocols"
+    },
+    {
+      "id": 11,
+      "text": "What is bandwidth?",
+      "options": [
+        "Maximum data transfer rate",
+        "Network delay",
+        "Data loss",
+        "Connection speed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bandwidth is maximum data transfer rate of network connection.",
+      "hint": "Think about data transfer capacity.",
+      "difficulty": "easy",
+      "topic": "Network Performance"
+    },
+    {
+      "id": 12,
+      "text": "Which cable type is used for Ethernet?",
+      "options": [
+        "Coaxial",
+        "Fiber optic",
+        "Twisted pair",
+        "All of the above"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Twisted pair cable (CAT5, CAT6) is commonly used for Ethernet networks.",
+      "hint": "Think about common network cable.",
+      "difficulty": "easy",
+      "topic": "Network Media"
+    },
+    {
+      "id": 13,
+      "text": "What is subnet mask?",
+      "options": [
+        "Divides IP network into subnets",
+        "Encrypts data",
+        "Filters packets",
+        "Routes traffic"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Subnet mask divides IP network into subnetworks for better management.",
+      "hint": "Think about network division.",
+      "difficulty": "hard",
+      "topic": "IP Addressing"
+    },
+    {
+      "id": 14,
+      "text": "Which protocol is connectionless?",
+      "options": [
+        "TCP",
+        "UDP",
+        "HTTP",
+        "FTP"
+      ],
+      "correctAnswer": 1,
+      "explanation": "UDP (User Datagram Protocol) is connectionless, unreliable protocol.",
+      "hint": "Think about connectionless transport.",
+      "difficulty": "medium",
+      "topic": "Transport Layer"
+    },
+    {
+      "id": 15,
+      "text": "What is Wi-Fi?",
+      "options": [
+        "Wireless networking technology",
+        "Wired networking",
+        "Network protocol",
+        "Network device"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Wi-Fi is wireless networking technology for local area networking.",
+      "hint": "Think about wireless networking.",
+      "difficulty": "easy",
+      "topic": "Wireless Networks"
+    },
+    {
+      "id": 16,
+      "text": "Which device connects multiple networks?",
+      "options": [
+        "Switch",
+        "Hub",
+        "Router",
+        "Bridge"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Router connects multiple networks and routes traffic between them.",
+      "hint": "Think about inter-network connection.",
+      "difficulty": "medium",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 17,
+      "text": "What is latency?",
+      "options": [
+        "Time delay in network",
+        "Data transfer rate",
+        "Network capacity",
+        "Data loss"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Latency is time delay in data transmission over network.",
+      "hint": "Think about network delay.",
+      "difficulty": "medium",
+      "topic": "Network Performance"
+    },
+    {
+      "id": 18,
+      "text": "Which protocol secures HTTP?",
+      "options": [
+        "HTTPS",
+        "FTP",
+        "SMTP",
+        "DNS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HTTPS (HTTP Secure) encrypts HTTP traffic using SSL/TLS.",
+      "hint": "Think about secure web protocol.",
+      "difficulty": "easy",
+      "topic": "Security"
+    },
+    {
+      "id": 19,
+      "text": "What is NAT?",
+      "options": [
+        "Network Address Translation",
+        "Network Access Time",
+        "Network Application Transfer",
+        "Network Address Transfer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "NAT translates private IP addresses to public IP addresses for internet access.",
+      "hint": "Think about IP address translation.",
+      "difficulty": "hard",
+      "topic": "Network Address Translation"
+    },
+    {
+      "id": 20,
+      "text": "Which topology has central connection point?",
+      "options": [
+        "Bus",
+        "Star",
+        "Ring",
+        "Mesh"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Star topology has central connection point (hub/switch) with devices connected to it.",
+      "hint": "Think about central hub topology.",
+      "difficulty": "easy",
+      "topic": "Network Topologies"
+    },
+    {
+      "id": 21,
+      "text": "What is DHCP?",
+      "options": [
+        "Dynamic Host Configuration Protocol",
+        "Dynamic Host Control Protocol",
+        "Domain Host Configuration Protocol",
+        "Domain Host Control Protocol"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DHCP automatically assigns IP addresses to devices on network.",
+      "hint": "Think about automatic IP assignment.",
+      "difficulty": "medium",
+      "topic": "Network Services"
+    },
+    {
+      "id": 22,
+      "text": "Which layer ensures reliable data transfer?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Transport",
+        "Application"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Transport layer ensures reliable data transfer between endpoints.",
+      "hint": "Think about end-to-end reliability.",
+      "difficulty": "medium",
+      "topic": "OSI Model"
+    },
+    {
+      "id": 23,
+      "text": "What is MAC address?",
+      "options": [
+        "Physical address of network interface",
+        "IP address",
+        "Domain name",
+        "Port number"
+      ],
+      "correctAnswer": 0,
+      "explanation": "MAC address is unique hardware address of network interface card.",
+      "hint": "Think about hardware address.",
+      "difficulty": "easy",
+      "topic": "MAC Address"
+    },
+    {
+      "id": 24,
+      "text": "Which protocol is used for file transfer?",
+      "options": [
+        "FTP",
+        "HTTP",
+        "SMTP",
+        "DNS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "FTP (File Transfer Protocol) is used for transferring files between systems.",
+      "hint": "Think about file transfer.",
+      "difficulty": "easy",
+      "topic": "Protocols"
+    },
+    {
+      "id": 25,
+      "text": "What is VPN?",
+      "options": [
+        "Virtual Private Network",
+        "Virtual Public Network",
+        "Verified Private Network",
+        "Verified Public Network"
+      ],
+      "correctAnswer": 0,
+      "explanation": "VPN creates secure, encrypted connection over public network.",
+      "hint": "Think about secure private network over public internet.",
+      "difficulty": "medium",
+      "topic": "Security"
+    },
+    {
+      "id": 26,
+      "text": "Which device operates at physical layer?",
+      "options": [
+        "Hub",
+        "Switch",
+        "Router",
+        "Bridge"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Hub operates at physical layer (Layer 1) of OSI model.",
+      "hint": "Think about basic networking device.",
+      "difficulty": "medium",
+      "topic": "Network Devices"
+    },
+    {
+      "id": 27,
+      "text": "What is packet switching?",
+      "options": [
+        "Data divided into packets for transmission",
+        "Circuit-based communication",
+        "Analog transmission",
+        "Direct connection"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Packet switching divides data into packets that travel independently over network.",
+      "hint": "Think about data segmentation.",
+      "difficulty": "hard",
+      "topic": "Network Switching"
+    },
+    {
+      "id": 28,
+      "text": "Which protocol is used for network management?",
+      "options": [
+        "SNMP",
+        "HTTP",
+        "FTP",
+        "SMTP"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SNMP (Simple Network Management Protocol) manages network devices.",
+      "hint": "Think about network device management.",
+      "difficulty": "hard",
+      "topic": "Network Management"
+    },
+    {
+      "id": 29,
+      "text": "What is the purpose of ARP?",
+      "options": [
+        "Map IP to MAC address",
+        "Map domain to IP",
+        "Encrypt data",
+        "Route packets"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ARP (Address Resolution Protocol) maps IP address to MAC address.",
+      "hint": "Think about IP-MAC mapping.",
+      "difficulty": "hard",
+      "topic": "Protocols"
+    },
+    {
+      "id": 30,
+      "text": "Which wireless standard is fastest?",
+      "options": [
+        "802.11a",
+        "802.11b",
+        "802.11g",
+        "802.11ac"
+      ],
+      "correctAnswer": 3,
+      "explanation": "802.11ac (Wi-Fi 5) is faster than older standards.",
+      "hint": "Think about latest Wi-Fi standard.",
+      "difficulty": "medium",
+      "topic": "Wireless Networks"
+    }
+  ]
+}

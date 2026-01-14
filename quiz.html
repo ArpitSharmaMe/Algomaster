@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALGOMASTER - Quiz</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/quiz.css">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon_io/site.webmanifest">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="logo-text">ALGOMASTER</div>
+                </div>
+                
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="topics.html">Topics</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <section class="quiz-section">
+                <!-- Quiz Header -->
+                <div class="quiz-header">
+                    <div class="quiz-title-section">
+                        <h1 class="quiz-title" id="quizSubject">C-Programming Quiz</h1>
+                        <p class="quiz-subtitle">Test your knowledge with 30 carefully crafted questions</p>
+                    </div>
+                    
+                    <div class="quiz-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Time: <span id="timer">30:00</span></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Question: <span id="currentQuestion">1</span>/<span id="totalQuestions">30</span></span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-chart-line"></i>
+                            <span>Score: <span id="score">0</span></span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quiz Progress Bar -->
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill" style="width: 3.33%;"></div>
+                    </div>
+                    <div class="progress-text">
+                        <span>Progress: <span id="progressPercent">3.33</span>%</span>
+                        <span id="progressText">1 of 30 questions</span>
+                    </div>
+                </div>
+                
+                <!-- Quiz Content -->
+                <div class="quiz-content">
+                    <!-- Question Container -->
+                    <div class="question-container" id="questionContainer">
+                        <div class="question-header">
+                            <span class="question-number" id="questionNumber">Question 1</span>
+                            <span class="question-difficulty" id="questionDifficulty">Medium</span>
+                        </div>
+                        
+                        <div class="question-text" id="questionText">
+                            What is the correct way to declare a pointer in C?
+                        </div>
+                        
+                        <!-- Options Container -->
+                        <div class="options-container" id="optionsContainer">
+                            <!-- Options will be dynamically inserted here -->
+                        </div>
+                        
+                        <!-- Navigation Buttons -->
+                        <div class="quiz-navigation">
+                            <button class="nav-btn prev-btn" id="prevBtn">
+                                <i class="fas fa-arrow-left"></i> Previous
+                            </button>
+                            
+                            <div class="action-buttons">
+                                <button class="action-btn hint-btn" id="hintBtn">
+                                    <i class="fas fa-lightbulb"></i> Hint
+                                </button>
+                                <button class="action-btn bookmark-btn" id="bookmarkBtn">
+                                    <i class="far fa-bookmark"></i> Bookmark
+                                </button>
+                                <button class="action-btn flag-btn" id="flagBtn">
+                                    <i class="far fa-flag"></i> Flag
+                                </button>
+                            </div>
+                            
+                            <button class="nav-btn next-btn" id="nextBtn">
+                                Next <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Quiz Sidebar -->
+                    <div class="quiz-sidebar">
+                        <!-- Timer Widget -->
+                        <div class="timer-widget">
+                            <h3><i class="fas fa-clock"></i> Time Remaining</h3>
+                            <div class="timer-display" id="timerDisplay">
+                                <div class="timer-circle">
+                                    <svg width="120" height="120" viewBox="0 0 120 120">
+                                        <circle class="timer-background" cx="60" cy="60" r="54"></circle>
+                                        <circle class="timer-progress" cx="60" cy="60" r="54" 
+                                                stroke-dasharray="339.292" stroke-dashoffset="0"></circle>
+                                    </svg>
+                                    <div class="timer-text" id="timerText">30:00</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Question Palette -->
+                        <div class="question-palette">
+                            <h3><i class="fas fa-th"></i> Question Palette</h3>
+                            <div class="palette-grid" id="paletteGrid">
+                                <!-- Question numbers will be dynamically inserted here -->
+                            </div>
+                            <div class="palette-legend">
+                                <div class="legend-item">
+                                    <span class="legend-color answered"></span>
+                                    <span>Answered</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color current"></span>
+                                    <span>Current</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color bookmarked"></span>
+                                    <span>Bookmarked</span>
+                                </div>
+                                <div class="legend-item">
+                                    <span class="legend-color flagged"></span>
+                                    <span>Flagged</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Quiz Controls -->
+                        <div class="quiz-controls">
+                            <button class="control-btn submit-btn" id="submitQuizBtn">
+                                <i class="fas fa-paper-plane"></i> Submit Quiz
+                            </button>
+                            <button class="control-btn restart-btn" id="restartBtn">
+                                <i class="fas fa-redo"></i> Restart
+                            </button>
+                            <button class="control-btn exit-btn" id="exitBtn">
+                                <i class="fas fa-sign-out-alt"></i> Exit Quiz
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Quiz Footer -->
+                <div class="quiz-footer">
+                    <div class="quiz-stats">
+                        <div class="stat" style="display: none;">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Correct: <span id="correctCount">0</span></span>
+                        </div>
+                        <div class="stat" style="display: none;">
+                            <i class="fas fa-times-circle"></i>
+                            <span>Incorrect: <span id="incorrectCount">0</span></span>
+                        </div>
+                        <div class="stat">
+                            <i class="far fa-question-circle"></i>
+                            <span>Unanswered: <span id="unansweredCount">30</span></span>
+                        </div>
+                        <div class="stat">
+                            <i class="far fa-bookmark"></i>
+                            <span>Bookmarked: <span id="bookmarkedCount">0</span></span>
+                        </div>
+                        <div class="stat">
+                            <i class="far fa-flag"></i>
+                            <span>Flagged: <span id="flaggedCount">0</span></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <!-- Review Mode Container -->
+    <div class="review-container" id="reviewContainer">
+        <div class="review-header">
+            <h2><i class="fas fa-list-check"></i> Review Your Answers</h2>
+            <p class="review-subtitle">Review your performance and see the correct answers</p>
+        </div>
+        
+        <!-- Review Content -->
+        <div class="quiz-content">
+            <!-- Review Question Container -->
+            <div class="question-container review-mode">
+                <div class="question-header">
+                    <span class="question-number" id="reviewQuestionNumber">Question 1</span>
+                    <span class="question-difficulty" id="reviewQuestionDifficulty">Medium</span>
+                </div>
+                
+                <div class="question-text" id="reviewQuestionText" data-status="Correct">
+                    What is the correct way to declare a pointer in C?
+                </div>
+                
+                <!-- Review Options Container -->
+                <div class="options-container" id="reviewOptionsContainer">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+                
+                <!-- Explanation Section -->
+                <div class="explanation-section" id="explanationSection">
+                    <h4><i class="fas fa-info-circle"></i> Explanation</h4>
+                    <p class="explanation-text" id="explanationText">
+                        This is the explanation for the correct answer.
+                    </p>
+                </div>
+                
+                <!-- Review Navigation -->
+                <div class="review-navigation">
+                    <button class="review-nav-btn" id="reviewPrevBtn">
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    
+                    <div class="review-stats">
+                        <span id="reviewCurrent">1</span> of <span id="reviewTotal">30</span> questions
+                    </div>
+                    
+                    <button class="review-nav-btn" id="reviewNextBtn">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                    <button class="review-nav-btn review-finish-btn" id="reviewFinishBtn">
+                        Finish Review <i class="fas fa-check"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    &copy; 2023 ALGOMASTER. All rights reserved. Created by Arpit Sharma
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal for Quiz Completion -->
+    <div class="modal-overlay" id="resultModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2><i class="fas fa-trophy"></i> Quiz Completed!</h2>
+                <button class="modal-close" id="modalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="result-summary">
+                    <div class="result-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 id="resultTitle">Excellent Performance!</h3>
+                    <div class="result-score">
+                        <span class="score-value" id="finalScore">0</span>
+                        <span class="score-total">/30</span>
+                    </div>
+                    <p class="result-message" id="resultMessage">You've demonstrated excellent understanding of the subject!</p>
+                    
+                    <div class="result-details">
+                        <div class="detail-row">
+                            <span>Correct Answers</span>
+                            <span id="finalCorrect">0</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Incorrect Answers</span>
+                            <span id="finalIncorrect">0</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Time Taken</span>
+                            <span id="timeTaken">0:00</span>
+                        </div>
+                        <div class="detail-row">
+                            <span>Accuracy</span>
+                            <span id="accuracy">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="result-actions">
+                    <button class="result-btn review-btn" id="reviewBtn">
+                        <i class="fas fa-list"></i> Review Answers
+                    </button>
+                    <button class="result-btn retry-btn" id="retryBtn">
+                        <i class="fas fa-redo"></i> Try Again
+                    </button>
+                    <button class="result-btn home-btn" id="homeBtn">
+                        <i class="fas fa-home"></i> Return Home
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Hint Modal -->
+    <div class="modal-overlay" id="hintModal">
+        <div class="modal-content hint-modal">
+            <div class="modal-header">
+                <h2><i class="fas fa-lightbulb"></i> Hint</h2>
+                <button class="modal-close" id="hintModalClose">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p id="hintText">This is a sample hint. In the actual quiz, hints will provide helpful information about the current question.</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Exit Confirmation Modal -->
+    <div class="modal-overlay" id="exitModal">
+        <div class="modal-content exit-modal">
+            <div class="modal-header">
+                <h2><i class="fas fa-exclamation-triangle"></i> Exit Quiz</h2>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to exit the quiz? Your progress will be lost.</p>
+                <div class="exit-actions">
+                    <button class="exit-confirm-btn" id="exitConfirmBtn">Yes, Exit</button>
+                    <button class="exit-cancel-btn" id="exitCancelBtn">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/main.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>

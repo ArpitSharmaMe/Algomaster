@@ -1,0 +1,457 @@
+{
+  "subject": "Database Management Systems",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What does SQL stand for?",
+      "options": [
+        "Structured Query Language",
+        "Simple Query Language",
+        "Standard Query Language",
+        "Sequential Query Language"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SQL stands for Structured Query Language, used for managing and manipulating relational databases.",
+      "hint": "Think about the full form of SQL.",
+      "difficulty": "easy",
+      "topic": "SQL Basics"
+    },
+    {
+      "id": 2,
+      "text": "Which SQL clause is used to filter records?",
+      "options": [
+        "GROUP BY",
+        "ORDER BY",
+        "WHERE",
+        "HAVING"
+      ],
+      "correctAnswer": 2,
+      "explanation": "WHERE clause is used to filter records based on specified conditions.",
+      "hint": "Think about conditional filtering.",
+      "difficulty": "easy",
+      "topic": "SQL Queries"
+    },
+    {
+      "id": 3,
+      "text": "What is a primary key?",
+      "options": [
+        "A key that can be NULL",
+        "A key that references another table",
+        "A unique identifier for a record",
+        "A key used for sorting"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A primary key is a unique identifier for each record in a table. It cannot be NULL and must be unique.",
+      "hint": "Think about unique identification.",
+      "difficulty": "easy",
+      "topic": "Database Design"
+    },
+    {
+      "id": 4,
+      "text": "Which type of JOIN returns all records from both tables?",
+      "options": [
+        "INNER JOIN",
+        "LEFT JOIN",
+        "RIGHT JOIN",
+        "FULL OUTER JOIN"
+      ],
+      "correctAnswer": 3,
+      "explanation": "FULL OUTER JOIN returns all records when there is a match in either left or right table.",
+      "hint": "Think about complete combination of both tables.",
+      "difficulty": "medium",
+      "topic": "SQL Joins"
+    },
+    {
+      "id": 5,
+      "text": "What is normalization?",
+      "options": [
+        "Increasing redundancy",
+        "Organizing data to reduce redundancy",
+        "Denormalizing tables",
+        "Creating more tables"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity.",
+      "hint": "Think about reducing duplication.",
+      "difficulty": "medium",
+      "topic": "Normalization"
+    },
+    {
+      "id": 6,
+      "text": "Which SQL statement is used to delete a table?",
+      "options": [
+        "REMOVE TABLE",
+        "DELETE TABLE",
+        "DROP TABLE",
+        "ERASE TABLE"
+      ],
+      "correctAnswer": 2,
+      "explanation": "DROP TABLE statement is used to delete an existing table in a database.",
+      "hint": "Think about table removal command.",
+      "difficulty": "easy",
+      "topic": "DDL"
+    },
+    {
+      "id": 7,
+      "text": "What does ACID stand for in database transactions?",
+      "options": [
+        "Atomicity, Consistency, Isolation, Durability",
+        "Accuracy, Consistency, Integrity, Durability",
+        "Atomicity, Consistency, Integrity, Durability",
+        "Accuracy, Completeness, Isolation, Durability"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ACID properties ensure reliable processing of database transactions: Atomicity, Consistency, Isolation, Durability.",
+      "hint": "Think about transaction properties.",
+      "difficulty": "medium",
+      "topic": "Transactions"
+    },
+    {
+      "id": 8,
+      "text": "Which command is used to add a new column to a table?",
+      "options": [
+        "MODIFY TABLE",
+        "ALTER TABLE",
+        "UPDATE TABLE",
+        "CHANGE TABLE"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ALTER TABLE statement is used to add, delete, or modify columns in an existing table.",
+      "hint": "Think about table structure modification.",
+      "difficulty": "medium",
+      "topic": "DDL"
+    },
+    {
+      "id": 9,
+      "text": "What is a foreign key?",
+      "options": [
+        "A primary key in another table",
+        "A key that must be unique",
+        "A key that cannot be NULL",
+        "A key that identifies a row in another table"
+      ],
+      "correctAnswer": 3,
+      "explanation": "A foreign key is a field in one table that uniquely identifies a row in another table, creating a relationship between tables.",
+      "hint": "Think about table relationships.",
+      "difficulty": "easy",
+      "topic": "Database Design"
+    },
+    {
+      "id": 10,
+      "text": "Which SQL function is used to count rows?",
+      "options": [
+        "SUM()",
+        "COUNT()",
+        "TOTAL()",
+        "NUMBER()"
+      ],
+      "correctAnswer": 1,
+      "explanation": "COUNT() function returns the number of rows that matches a specified criterion.",
+      "hint": "Think about counting records.",
+      "difficulty": "easy",
+      "topic": "SQL Functions"
+    },
+    {
+      "id": 11,
+      "text": "What is an index in a database?",
+      "options": [
+        "A table that stores metadata",
+        "A data structure that improves query speed",
+        "A type of constraint",
+        "A backup of the database"
+      ],
+      "correctAnswer": 1,
+      "explanation": "An index is a data structure that improves the speed of data retrieval operations on a database table.",
+      "hint": "Think about query performance optimization.",
+      "difficulty": "medium",
+      "topic": "Performance"
+    },
+    {
+      "id": 12,
+      "text": "Which statement is used to retrieve data from a database?",
+      "options": [
+        "GET",
+        "SELECT",
+        "RETRIEVE",
+        "FETCH"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SELECT statement is used to select data from a database. The data returned is stored in a result table.",
+      "hint": "Think about data retrieval command.",
+      "difficulty": "easy",
+      "topic": "SQL Queries"
+    },
+    {
+      "id": 13,
+      "text": "What is the purpose of GROUP BY clause?",
+      "options": [
+        "To filter groups",
+        "To sort results",
+        "To group rows that have the same values",
+        "To join tables"
+      ],
+      "correctAnswer": 2,
+      "explanation": "GROUP BY clause groups rows that have the same values in specified columns into summary rows.",
+      "hint": "Think about data aggregation.",
+      "difficulty": "medium",
+      "topic": "SQL Queries"
+    },
+    {
+      "id": 14,
+      "text": "Which type of database model represents data as tables?",
+      "options": [
+        "Hierarchical",
+        "Network",
+        "Relational",
+        "Object-oriented"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Relational database model represents data as a collection of tables with rows and columns.",
+      "hint": "Think about table-based data representation.",
+      "difficulty": "easy",
+      "topic": "Database Models"
+    },
+    {
+      "id": 15,
+      "text": "What is a view in SQL?",
+      "options": [
+        "A physical table",
+        "A stored query",
+        "A database backup",
+        "An index type"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A view is a virtual table based on the result-set of an SQL statement. It contains rows and columns like a real table.",
+      "hint": "Think about virtual tables.",
+      "difficulty": "medium",
+      "topic": "Views"
+    },
+    {
+      "id": 16,
+      "text": "Which command is used to remove rows from a table?",
+      "options": [
+        "DELETE",
+        "REMOVE",
+        "DROP",
+        "ERASE"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DELETE statement is used to delete existing records in a table.",
+      "hint": "Think about row removal command.",
+      "difficulty": "easy",
+      "topic": "DML"
+    },
+    {
+      "id": 17,
+      "text": "What is the difference between WHERE and HAVING clause?",
+      "options": [
+        "WHERE filters rows, HAVING filters groups",
+        "WHERE filters groups, HAVING filters rows",
+        "No difference",
+        "WHERE is for SELECT, HAVING is for UPDATE"
+      ],
+      "correctAnswer": 0,
+      "explanation": "WHERE filters rows before grouping, HAVING filters groups after GROUP BY.",
+      "hint": "Think about when filtering happens.",
+      "difficulty": "hard",
+      "topic": "SQL Queries"
+    },
+    {
+      "id": 18,
+      "text": "Which SQL constraint ensures all values in a column are unique?",
+      "options": [
+        "PRIMARY KEY",
+        "FOREIGN KEY",
+        "UNIQUE",
+        "CHECK"
+      ],
+      "correctAnswer": 2,
+      "explanation": "UNIQUE constraint ensures that all values in a column are different.",
+      "hint": "Think about uniqueness constraint.",
+      "difficulty": "easy",
+      "topic": "Constraints"
+    },
+    {
+      "id": 19,
+      "text": "What is a stored procedure?",
+      "options": [
+        "A database table",
+        "A precompiled collection of SQL statements",
+        "A type of index",
+        "A backup file"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A stored procedure is a precompiled collection of SQL statements stored in the database.",
+      "hint": "Think about reusable SQL code blocks.",
+      "difficulty": "medium",
+      "topic": "Stored Procedures"
+    },
+    {
+      "id": 20,
+      "text": "Which database object automatically generates unique numbers?",
+      "options": [
+        "Sequence",
+        "Trigger",
+        "Index",
+        "View"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Sequence is a database object that generates unique numbers, often used for primary key values.",
+      "hint": "Think about number generation.",
+      "difficulty": "medium",
+      "topic": "Database Objects"
+    },
+    {
+      "id": 21,
+      "text": "What is the purpose of COMMIT statement?",
+      "options": [
+        "To start a transaction",
+        "To save transaction changes permanently",
+        "To rollback changes",
+        "To create a savepoint"
+      ],
+      "correctAnswer": 1,
+      "explanation": "COMMIT saves all the transactions to the database permanently.",
+      "hint": "Think about making changes permanent.",
+      "difficulty": "medium",
+      "topic": "Transactions"
+    },
+    {
+      "id": 22,
+      "text": "Which type of relationship is 'one-to-many'?",
+      "options": [
+        "A row in table A relates to multiple rows in table B",
+        "Multiple rows in table A relate to one row in table B",
+        "One row in table A relates to one row in table B",
+        "Multiple rows in table A relate to multiple rows in table B"
+      ],
+      "correctAnswer": 0,
+      "explanation": "One-to-many relationship: a single record in table A can be related to one or more records in table B.",
+      "hint": "Think about one parent, multiple children.",
+      "difficulty": "easy",
+      "topic": "Relationships"
+    },
+    {
+      "id": 23,
+      "text": "What is denormalization?",
+      "options": [
+        "Adding redundancy to improve performance",
+        "Removing all redundancy",
+        "Creating more tables",
+        "Deleting unused tables"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Denormalization is the process of adding redundant data to improve database performance.",
+      "hint": "Think about performance optimization.",
+      "difficulty": "hard",
+      "topic": "Normalization"
+    },
+    {
+      "id": 24,
+      "text": "Which SQL command is used to change existing data?",
+      "options": [
+        "MODIFY",
+        "CHANGE",
+        "UPDATE",
+        "ALTER"
+      ],
+      "correctAnswer": 2,
+      "explanation": "UPDATE statement is used to modify existing records in a table.",
+      "hint": "Think about data modification command.",
+      "difficulty": "easy",
+      "topic": "DML"
+    },
+    {
+      "id": 25,
+      "text": "What is a trigger in SQL?",
+      "options": [
+        "A scheduled job",
+        "A stored procedure that automatically executes",
+        "A type of constraint",
+        "A database backup"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A trigger is a stored procedure that automatically executes when a specified event occurs.",
+      "hint": "Think about automatic execution on events.",
+      "difficulty": "hard",
+      "topic": "Triggers"
+    },
+    {
+      "id": 26,
+      "text": "Which SQL clause is used to sort results?",
+      "options": [
+        "GROUP BY",
+        "ORDER BY",
+        "SORT BY",
+        "ARRANGE BY"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ORDER BY clause is used to sort the result-set in ascending or descending order.",
+      "hint": "Think about sorting command.",
+      "difficulty": "easy",
+      "topic": "SQL Queries"
+    },
+    {
+      "id": 27,
+      "text": "What is a cursor in SQL?",
+      "options": [
+        "A database object to retrieve data row by row",
+        "A type of index",
+        "A table alias",
+        "A database connection"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A cursor is a database object used to retrieve data from a result set one row at a time.",
+      "hint": "Think about row-by-row processing.",
+      "difficulty": "hard",
+      "topic": "Programming"
+    },
+    {
+      "id": 28,
+      "text": "Which constraint ensures referential integrity?",
+      "options": [
+        "PRIMARY KEY",
+        "UNIQUE",
+        "FOREIGN KEY",
+        "CHECK"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Foreign key constraint ensures referential integrity by linking two tables together.",
+      "hint": "Think about table relationships integrity.",
+      "difficulty": "medium",
+      "topic": "Constraints"
+    },
+    {
+      "id": 29,
+      "text": "What is the purpose of the LIKE operator?",
+      "options": [
+        "To compare values",
+        "To search for a specified pattern",
+        "To perform mathematical operations",
+        "To join tables"
+      ],
+      "correctAnswer": 1,
+      "explanation": "LIKE operator is used in WHERE clause to search for a specified pattern in a column.",
+      "hint": "Think about pattern matching.",
+      "difficulty": "easy",
+      "topic": "SQL Operators"
+    },
+    {
+      "id": 30,
+      "text": "Which database model stores data in documents?",
+      "options": [
+        "Relational",
+        "Document",
+        "Graph",
+        "Hierarchical"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Document databases store data in documents, typically JSON or BSON format.",
+      "hint": "Think about NoSQL databases.",
+      "difficulty": "medium",
+      "topic": "NoSQL"
+    }
+  ]
+}

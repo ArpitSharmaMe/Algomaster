@@ -1,0 +1,457 @@
+{
+  "subject": "C-Programming",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is the correct syntax to declare a pointer in C?",
+      "options": [
+        "int ptr;",
+        "int *ptr;",
+        "pointer int ptr;",
+        "int &ptr;"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In C, pointers are declared using the asterisk (*) symbol. The correct syntax is 'int *ptr;' which declares a pointer to an integer.",
+      "hint": "Think about the symbol used for pointer declaration.",
+      "difficulty": "easy",
+      "topic": "Pointers"
+    },
+    {
+      "id": 2,
+      "text": "Which of the following is NOT a valid C variable name?",
+      "options": [
+        "_variable",
+        "variable_name",
+        "99variable",
+        "variable99"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Variable names in C cannot start with a digit. '99variable' starts with numbers, making it invalid.",
+      "hint": "Remember the rules for identifier naming in C.",
+      "difficulty": "easy",
+      "topic": "Variables"
+    },
+    {
+      "id": 3,
+      "text": "What is the output of sizeof(int) on a typical 32-bit system?",
+      "options": [
+        "1 byte",
+        "2 bytes",
+        "4 bytes",
+        "8 bytes"
+      ],
+      "correctAnswer": 2,
+      "explanation": "On a 32-bit system, sizeof(int) typically returns 4 bytes, as integers are usually stored in 4 bytes (32 bits).",
+      "hint": "Consider the architecture of the system.",
+      "difficulty": "easy",
+      "topic": "Data Types"
+    },
+    {
+      "id": 4,
+      "text": "Which loop is guaranteed to execute at least once?",
+      "options": [
+        "for loop",
+        "while loop",
+        "do-while loop",
+        "All loops execute at least once"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The do-while loop checks the condition after executing the loop body, so it always runs at least once.",
+      "hint": "Think about when the condition is evaluated in different loops.",
+      "difficulty": "medium",
+      "topic": "Control Structures"
+    },
+    {
+      "id": 5,
+      "text": "What does the 'const' keyword do in C?",
+      "options": [
+        "Declares a constant function",
+        "Declares a constant variable",
+        "Declares a constant pointer",
+        "Both B and C"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The 'const' keyword can be used to declare constant variables (value cannot change) and constant pointers (pointer cannot point to different memory).",
+      "hint": "Consider the different uses of 'const'.",
+      "difficulty": "medium",
+      "topic": "Keywords"
+    },
+    {
+      "id": 6,
+      "text": "What is the purpose of the 'break' statement in a switch case?",
+      "options": [
+        "To terminate the program",
+        "To exit the switch statement",
+        "To skip the current iteration",
+        "To continue to the next case"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The 'break' statement in a switch case is used to exit the switch statement and prevent fall-through to subsequent cases.",
+      "hint": "Think about switch case behavior.",
+      "difficulty": "easy",
+      "topic": "Control Structures"
+    },
+    {
+      "id": 7,
+      "text": "Which of these is NOT a valid storage class in C?",
+      "options": [
+        "auto",
+        "register",
+        "extern",
+        "global"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C has four storage classes: auto, register, static, and extern. 'global' is not a storage class, though variables declared outside functions have global scope.",
+      "hint": "Review C storage classes.",
+      "difficulty": "medium",
+      "topic": "Storage Classes"
+    },
+    {
+      "id": 8,
+      "text": "What is the difference between ++i and i++?",
+      "options": [
+        "No difference",
+        "++i is pre-increment, i++ is post-increment",
+        "++i works only for integers",
+        "i++ is faster than ++i"
+      ],
+      "correctAnswer": 1,
+      "explanation": "++i is pre-increment (increments then returns the value), i++ is post-increment (returns the value then increments).",
+      "hint": "Think about when the increment happens.",
+      "difficulty": "medium",
+      "topic": "Operators"
+    },
+    {
+      "id": 9,
+      "text": "Which header file is required for using malloc()?",
+      "options": [
+        "<stdio.h>",
+        "<stdlib.h>",
+        "<string.h>",
+        "<memory.h>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The malloc() function is declared in the <stdlib.h> header file, which contains functions for memory allocation, process control, conversions, and others.",
+      "hint": "Think about which header contains memory allocation functions.",
+      "difficulty": "easy",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 10,
+      "text": "What is a dangling pointer?",
+      "options": [
+        "A pointer that points to nothing",
+        "A pointer that points to freed memory",
+        "A pointer with incorrect type",
+        "A pointer that points to itself"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A dangling pointer is a pointer that points to memory that has been freed or deleted. Accessing such pointers leads to undefined behavior.",
+      "hint": "Think about memory that has been deallocated.",
+      "difficulty": "hard",
+      "topic": "Pointers"
+    },
+    {
+      "id": 11,
+      "text": "What is the output of: printf(\"%d\", 5 / 2);",
+      "options": [
+        "2.5",
+        "2",
+        "3",
+        "Compilation error"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In C, integer division truncates the decimal part. 5/2 = 2.5, but since both are integers, the result is truncated to 2.",
+      "hint": "Consider integer division rules.",
+      "difficulty": "easy",
+      "topic": "Operators"
+    },
+    {
+      "id": 12,
+      "text": "Which function is used to compare two strings?",
+      "options": [
+        "strcmp()",
+        "strcat()",
+        "strcpy()",
+        "strlen()"
+      ],
+      "correctAnswer": 0,
+      "explanation": "strcmp() is used to compare two strings. It returns 0 if they are equal, negative if the first is less, positive if the first is greater.",
+      "hint": "Think about string comparison functions.",
+      "difficulty": "easy",
+      "topic": "Strings"
+    },
+    {
+      "id": 13,
+      "text": "What is a structure in C?",
+      "options": [
+        "A collection of variables under one name",
+        "A type of function",
+        "A preprocessor directive",
+        "A memory allocation method"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A structure is a user-defined data type that groups related variables of different data types under a single name.",
+      "hint": "Think about grouping different data types.",
+      "difficulty": "medium",
+      "topic": "Structures"
+    },
+    {
+      "id": 14,
+      "text": "Which operator is used to access structure members?",
+      "options": [
+        ".",
+        "->",
+        "Both . and ->",
+        ":"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The dot (.) operator is used with structure variables, while the arrow (->) operator is used with structure pointers.",
+      "hint": "Consider different ways to access structure members.",
+      "difficulty": "medium",
+      "topic": "Structures"
+    },
+    {
+      "id": 15,
+      "text": "What is the purpose of the 'typedef' keyword?",
+      "options": [
+        "To define a new type",
+        "To type-check variables",
+        "To allocate memory",
+        "To include header files"
+      ],
+      "correctAnswer": 0,
+      "explanation": "typedef is used to create an alias (new name) for an existing data type, making code more readable and manageable.",
+      "hint": "Think about creating type aliases.",
+      "difficulty": "medium",
+      "topic": "Keywords"
+    },
+    {
+      "id": 16,
+      "text": "What is the default return type of a function in C if not specified?",
+      "options": [
+        "void",
+        "int",
+        "char",
+        "float"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In C, if no return type is specified for a function, it defaults to int. However, this is considered bad practice and modern compilers may warn about it.",
+      "hint": "Consider C's default behavior.",
+      "difficulty": "medium",
+      "topic": "Functions"
+    },
+    {
+      "id": 17,
+      "text": "Which of these is used for dynamic memory allocation?",
+      "options": [
+        "malloc()",
+        "calloc()",
+        "realloc()",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "malloc(), calloc(), and realloc() are all used for dynamic memory allocation in C. malloc() allocates memory, calloc() allocates and initializes to zero, realloc() resizes allocated memory.",
+      "hint": "Think about different memory allocation functions.",
+      "difficulty": "medium",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 18,
+      "text": "What is recursion in C?",
+      "options": [
+        "A function calling another function",
+        "A function calling itself",
+        "A loop inside a function",
+        "Multiple functions with same name"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Recursion is when a function calls itself directly or indirectly. It's used to solve problems that can be broken down into smaller, similar subproblems.",
+      "hint": "Think about self-referential functions.",
+      "difficulty": "medium",
+      "topic": "Functions"
+    },
+    {
+      "id": 19,
+      "text": "Which of these is a valid way to pass an array to a function?",
+      "options": [
+        "By value",
+        "By reference",
+        "Both A and B",
+        "Arrays cannot be passed to functions"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In C, arrays are always passed by reference (as pointers to the first element). The size information is lost, so it's common to pass the size as a separate parameter.",
+      "hint": "Consider how arrays behave in function calls.",
+      "difficulty": "hard",
+      "topic": "Arrays"
+    },
+    {
+      "id": 20,
+      "text": "What is a file pointer in C?",
+      "options": [
+        "A pointer to a file stream",
+        "A pointer to file content",
+        "A pointer to filename",
+        "A special type of integer"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A FILE pointer (FILE *) is a pointer to a structure that contains information about the file, including its location, size, and current position.",
+      "hint": "Think about file handling in C.",
+      "difficulty": "medium",
+      "topic": "File Handling"
+    },
+    {
+      "id": 21,
+      "text": "Which mode opens a file for both reading and writing?",
+      "options": [
+        "\"r\"",
+        "\"w\"",
+        "\"a\"",
+        "\"r+\""
+      ],
+      "correctAnswer": 3,
+      "explanation": "\"r+\" opens a file for both reading and writing. The file must exist. \"w+\" also allows both but truncates the file to zero length if it exists.",
+      "hint": "Check file opening modes.",
+      "difficulty": "medium",
+      "topic": "File Handling"
+    },
+    {
+      "id": 22,
+      "text": "What is the difference between = and == in C?",
+      "options": [
+        "No difference",
+        "= is assignment, == is comparison",
+        "= is comparison, == is assignment",
+        "Both are comparison operators"
+      ],
+      "correctAnswer": 1,
+      "explanation": "= is the assignment operator (sets a value), while == is the equality comparison operator (checks if two values are equal).",
+      "hint": "Think about assignment vs comparison.",
+      "difficulty": "easy",
+      "topic": "Operators"
+    },
+    {
+      "id": 23,
+      "text": "What is a macro in C?",
+      "options": [
+        "A small program",
+        "A preprocessor directive",
+        "A type of variable",
+        "A function definition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A macro is a fragment of code that has been given a name. It's handled by the preprocessor and replaced before compilation.",
+      "hint": "Think about preprocessor directives.",
+      "difficulty": "medium",
+      "topic": "Preprocessor"
+    },
+    {
+      "id": 24,
+      "text": "Which of these is used to include a header file?",
+      "options": [
+        "#include",
+        "#define",
+        "#ifdef",
+        "#pragma"
+      ],
+      "correctAnswer": 0,
+      "explanation": "#include is a preprocessor directive used to include the contents of a header file in the source code.",
+      "hint": "Think about including external code.",
+      "difficulty": "easy",
+      "topic": "Preprocessor"
+    },
+    {
+      "id": 25,
+      "text": "What is the purpose of the 'static' keyword?",
+      "options": [
+        "To make variables persistent",
+        "To limit variable scope",
+        "To allocate memory in stack",
+        "Both A and B"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The static keyword has two purposes: 1) For local variables: makes them persist between function calls. 2) For global variables/functions: limits their scope to the file they're declared in.",
+      "hint": "Consider different contexts for 'static'.",
+      "difficulty": "hard",
+      "topic": "Storage Classes"
+    },
+    {
+      "id": 26,
+      "text": "What is a union in C?",
+      "options": [
+        "Similar to structure but uses shared memory",
+        "A collection of functions",
+        "A type of array",
+        "A memory allocation technique"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A union is similar to a structure, but all members share the same memory location. Only one member can contain a value at any given time.",
+      "hint": "Think about memory sharing in data types.",
+      "difficulty": "hard",
+      "topic": "Unions"
+    },
+    {
+      "id": 27,
+      "text": "Which function is used to read formatted input?",
+      "options": [
+        "scanf()",
+        "printf()",
+        "gets()",
+        "fgets()"
+      ],
+      "correctAnswer": 0,
+      "explanation": "scanf() is used to read formatted input from standard input. It can read different data types based on format specifiers.",
+      "hint": "Think about input functions.",
+      "difficulty": "easy",
+      "topic": "Input/Output"
+    },
+    {
+      "id": 28,
+      "text": "What is the size of a character in C?",
+      "options": [
+        "1 byte",
+        "2 bytes",
+        "4 bytes",
+        "Depends on system"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In C, a char is always 1 byte by definition, regardless of the system architecture.",
+      "hint": "Think about the fundamental size of char.",
+      "difficulty": "easy",
+      "topic": "Data Types"
+    },
+    {
+      "id": 29,
+      "text": "What does the 'volatile' keyword do?",
+      "options": [
+        "Prevents variable optimization",
+        "Makes variables faster",
+        "Allocates memory in heap",
+        "Declares constant variables"
+      ],
+      "correctAnswer": 0,
+      "explanation": "volatile tells the compiler that the variable's value may change at any time without any action being taken by the code, preventing certain optimizations.",
+      "hint": "Think about compiler optimizations.",
+      "difficulty": "hard",
+      "topic": "Keywords"
+    },
+    {
+      "id": 30,
+      "text": "What is the purpose of the 'goto' statement?",
+      "options": [
+        "To create loops",
+        "To transfer control to a labeled statement",
+        "To exit functions",
+        "To skip code"
+      ],
+      "correctAnswer": 1,
+      "explanation": "goto transfers control to a labeled statement within the same function. It's generally discouraged as it can make code hard to follow.",
+      "hint": "Think about unconditional jumps.",
+      "difficulty": "medium",
+      "topic": "Control Structures"
+    }
+  ]
+}

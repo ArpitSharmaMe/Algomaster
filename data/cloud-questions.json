@@ -1,0 +1,457 @@
+{
+  "subject": "Cloud Computing",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is cloud computing?",
+      "options": [
+        "Delivery of computing services over internet",
+        "Local computing only",
+        "Personal computer",
+        "Network cables"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cloud computing delivers computing services (servers, storage, databases) over internet.",
+      "hint": "Think about internet-based services.",
+      "difficulty": "easy",
+      "topic": "Cloud Basics"
+    },
+    {
+      "id": 2,
+      "text": "Which service model provides virtual machines?",
+      "options": [
+        "IaaS",
+        "PaaS",
+        "SaaS",
+        "FaaS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IaaS (Infrastructure as a Service) provides virtual machines, storage, and networking.",
+      "hint": "Think about infrastructure services.",
+      "difficulty": "easy",
+      "topic": "Service Models"
+    },
+    {
+      "id": 3,
+      "text": "What does SaaS stand for?",
+      "options": [
+        "Software as a Service",
+        "System as a Service",
+        "Server as a Service",
+        "Storage as a Service"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SaaS stands for Software as a Service, providing software applications over internet.",
+      "hint": "Think about software delivery.",
+      "difficulty": "easy",
+      "topic": "Service Models"
+    },
+    {
+      "id": 4,
+      "text": "Which is a public cloud provider?",
+      "options": [
+        "AWS",
+        "Private data center",
+        "On-premise server",
+        "Local network"
+      ],
+      "correctAnswer": 0,
+      "explanation": "AWS (Amazon Web Services) is a public cloud provider offering services to general public.",
+      "hint": "Think about major cloud provider.",
+      "difficulty": "easy",
+      "topic": "Cloud Providers"
+    },
+    {
+      "id": 5,
+      "text": "What is virtualization?",
+      "options": [
+        "Creating virtual version of resource",
+        "Physical hardware",
+        "Network cable",
+        "Real server"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Virtualization creates virtual versions of physical resources (servers, storage, networks).",
+      "hint": "Think about virtual resources.",
+      "difficulty": "medium",
+      "topic": "Virtualization"
+    },
+    {
+      "id": 6,
+      "text": "Which deployment model is for single organization?",
+      "options": [
+        "Public Cloud",
+        "Private Cloud",
+        "Hybrid Cloud",
+        "Community Cloud"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Private cloud is dedicated to single organization with more control and security.",
+      "hint": "Think about dedicated cloud.",
+      "difficulty": "easy",
+      "topic": "Deployment Models"
+    },
+    {
+      "id": 7,
+      "text": "What is auto-scaling?",
+      "options": [
+        "Automatic adjustment of resources",
+        "Manual scaling",
+        "Fixed resources",
+        "No scaling"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Auto-scaling automatically adjusts computing resources based on demand.",
+      "hint": "Think about automatic resource adjustment.",
+      "difficulty": "medium",
+      "topic": "Cloud Features"
+    },
+    {
+      "id": 8,
+      "text": "Which service provides databases in cloud?",
+      "options": [
+        "RDS",
+        "EC2",
+        "S3",
+        "Lambda"
+      ],
+      "correctAnswer": 0,
+      "explanation": "RDS (Relational Database Service) provides managed databases in AWS cloud.",
+      "hint": "Think about database service.",
+      "difficulty": "medium",
+      "topic": "Cloud Services"
+    },
+    {
+      "id": 9,
+      "text": "What is pay-as-you-go pricing?",
+      "options": [
+        "Pay only for what you use",
+        "Fixed monthly fee",
+        "Annual contract",
+        "Free service"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Pay-as-you-go pricing charges only for resources consumed, no upfront costs.",
+      "hint": "Think about usage-based billing.",
+      "difficulty": "easy",
+      "topic": "Cloud Economics"
+    },
+    {
+      "id": 10,
+      "text": "Which service provides object storage?",
+      "options": [
+        "S3",
+        "EC2",
+        "RDS",
+        "Lambda"
+      ],
+      "correctAnswer": 0,
+      "explanation": "S3 (Simple Storage Service) provides object storage in AWS.",
+      "hint": "Think about storage service.",
+      "difficulty": "medium",
+      "topic": "Cloud Services"
+    },
+    {
+      "id": 11,
+      "text": "What is hybrid cloud?",
+      "options": [
+        "Combination of public and private cloud",
+        "Only public cloud",
+        "Only private cloud",
+        "No cloud"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Hybrid cloud combines public and private clouds, allowing data/applications sharing.",
+      "hint": "Think about mixed cloud environment.",
+      "difficulty": "medium",
+      "topic": "Deployment Models"
+    },
+    {
+      "id": 12,
+      "text": "Which service provides serverless computing?",
+      "options": [
+        "Lambda",
+        "EC2",
+        "S3",
+        "RDS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "AWS Lambda provides serverless computing (Function as a Service).",
+      "hint": "Think about function-based computing.",
+      "difficulty": "medium",
+      "topic": "Serverless"
+    },
+    {
+      "id": 13,
+      "text": "What is cloud migration?",
+      "options": [
+        "Moving data/applications to cloud",
+        "Moving within same cloud",
+        "Moving to different country",
+        "Moving to new office"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cloud migration moves data, applications, and business processes to cloud environment.",
+      "hint": "Think about moving to cloud.",
+      "difficulty": "medium",
+      "topic": "Cloud Migration"
+    },
+    {
+      "id": 14,
+      "text": "Which is a benefit of cloud computing?",
+      "options": [
+        "Scalability",
+        "High upfront cost",
+        "Limited accessibility",
+        "Manual management"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Scalability is key benefit - easily scale resources up/down based on demand.",
+      "hint": "Think about flexible resource adjustment.",
+      "difficulty": "easy",
+      "topic": "Cloud Benefits"
+    },
+    {
+      "id": 15,
+      "text": "What is multi-tenancy?",
+      "options": [
+        "Multiple customers share resources",
+        "Single customer uses all resources",
+        "No resource sharing",
+        "Physical separation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Multi-tenancy allows multiple customers to share same physical resources securely.",
+      "hint": "Think about resource sharing.",
+      "difficulty": "hard",
+      "topic": "Cloud Architecture"
+    },
+    {
+      "id": 16,
+      "text": "Which service provides content delivery network?",
+      "options": [
+        "CloudFront",
+        "S3",
+        "EC2",
+        "RDS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CloudFront is AWS CDN (Content Delivery Network) service.",
+      "hint": "Think about content distribution.",
+      "difficulty": "medium",
+      "topic": "Cloud Services"
+    },
+    {
+      "id": 17,
+      "text": "What is elasticity?",
+      "options": [
+        "Quickly scale resources",
+        "Fixed resources",
+        "Manual scaling",
+        "No scaling"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Elasticity is ability to quickly scale resources up/down to meet demand.",
+      "hint": "Think about rapid scaling.",
+      "difficulty": "medium",
+      "topic": "Cloud Features"
+    },
+    {
+      "id": 18,
+      "text": "Which service provides virtual machines?",
+      "options": [
+        "EC2",
+        "S3",
+        "RDS",
+        "Lambda"
+      ],
+      "correctAnswer": 0,
+      "explanation": "EC2 (Elastic Compute Cloud) provides virtual machines in AWS.",
+      "hint": "Think about compute service.",
+      "difficulty": "easy",
+      "topic": "Cloud Services"
+    },
+    {
+      "id": 19,
+      "text": "What is cloud security?",
+      "options": [
+        "Protection of cloud data and systems",
+        "Physical security only",
+        "Network security only",
+        "No security needed"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cloud security encompasses policies, controls, and technologies protecting cloud data and systems.",
+      "hint": "Think about cloud protection.",
+      "difficulty": "medium",
+      "topic": "Cloud Security"
+    },
+    {
+      "id": 20,
+      "text": "Which is a container service?",
+      "options": [
+        "ECS",
+        "EC2",
+        "S3",
+        "RDS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "ECS (Elastic Container Service) manages Docker containers in AWS.",
+      "hint": "Think about container management.",
+      "difficulty": "hard",
+      "topic": "Containers"
+    },
+    {
+      "id": 21,
+      "text": "What is PaaS?",
+      "options": [
+        "Platform as a Service",
+        "Program as a Service",
+        "Process as a Service",
+        "Package as a Service"
+      ],
+      "correctAnswer": 0,
+      "explanation": "PaaS provides platform allowing customers to develop, run, and manage applications.",
+      "hint": "Think about platform services.",
+      "difficulty": "medium",
+      "topic": "Service Models"
+    },
+    {
+      "id": 22,
+      "text": "Which service monitors cloud resources?",
+      "options": [
+        "CloudWatch",
+        "S3",
+        "EC2",
+        "RDS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CloudWatch monitors AWS resources and applications.",
+      "hint": "Think about monitoring service.",
+      "difficulty": "medium",
+      "topic": "Cloud Services"
+    },
+    {
+      "id": 23,
+      "text": "What is serverless computing?",
+      "options": [
+        "Run code without managing servers",
+        "Running on physical servers",
+        "Manual server management",
+        "No code execution"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Serverless computing runs code without provisioning or managing servers.",
+      "hint": "Think about no server management.",
+      "difficulty": "hard",
+      "topic": "Serverless"
+    },
+    {
+      "id": 24,
+      "text": "Which cloud provider is from Microsoft?",
+      "options": [
+        "Azure",
+        "AWS",
+        "GCP",
+        "IBM Cloud"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Microsoft Azure is cloud computing service by Microsoft.",
+      "hint": "Think about Microsoft's cloud.",
+      "difficulty": "easy",
+      "topic": "Cloud Providers"
+    },
+    {
+      "id": 25,
+      "text": "What is cloud storage?",
+      "options": [
+        "Storage service over internet",
+        "Local hard drive",
+        "USB drive",
+        "CD/DVD"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cloud storage stores data on remote servers accessed over internet.",
+      "hint": "Think about internet-based storage.",
+      "difficulty": "easy",
+      "topic": "Cloud Storage"
+    },
+    {
+      "id": 26,
+      "text": "Which service manages networking?",
+      "options": [
+        "VPC",
+        "S3",
+        "EC2",
+        "Lambda"
+      ],
+      "correctAnswer": 0,
+      "explanation": "VPC (Virtual Private Cloud) provides isolated cloud network in AWS.",
+      "hint": "Think about network isolation.",
+      "difficulty": "hard",
+      "topic": "Networking"
+    },
+    {
+      "id": 27,
+      "text": "What is disaster recovery in cloud?",
+      "options": [
+        "Backup and restore procedures",
+        "No backup needed",
+        "Physical backup only",
+        "Local backup only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cloud disaster recovery replicates data/systems to cloud for business continuity.",
+      "hint": "Think about backup and recovery.",
+      "difficulty": "medium",
+      "topic": "Disaster Recovery"
+    },
+    {
+      "id": 28,
+      "text": "Which service provides AI capabilities?",
+      "options": [
+        "SageMaker",
+        "S3",
+        "EC2",
+        "RDS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Amazon SageMaker provides machine learning capabilities in AWS.",
+      "hint": "Think about AI/ML service.",
+      "difficulty": "hard",
+      "topic": "AI/ML"
+    },
+    {
+      "id": 29,
+      "text": "What is cloud bursting?",
+      "options": [
+        "Use cloud for overflow traffic",
+        "Cloud failure",
+        "Cloud shutdown",
+        "Cloud creation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cloud bursting uses cloud resources to handle overflow traffic from private infrastructure.",
+      "hint": "Think about overflow handling.",
+      "difficulty": "hard",
+      "topic": "Hybrid Cloud"
+    },
+    {
+      "id": 30,
+      "text": "Which is a database service?",
+      "options": [
+        "DynamoDB",
+        "EC2",
+        "S3",
+        "Lambda"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DynamoDB is NoSQL database service in AWS.",
+      "hint": "Think about NoSQL database.",
+      "difficulty": "medium",
+      "topic": "Database Services"
+    }
+  ]
+}

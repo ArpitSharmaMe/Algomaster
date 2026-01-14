@@ -1,0 +1,457 @@
+{
+  "subject": "Internet of Things",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What does IoT stand for?",
+      "options": [
+        "Internet of Things",
+        "Internet of Technology",
+        "Internet of Thinking",
+        "Internet of Tools"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IoT stands for Internet of Things, connecting physical devices to internet.",
+      "hint": "Think about connected devices.",
+      "difficulty": "easy",
+      "topic": "IoT Basics"
+    },
+    {
+      "id": 2,
+      "text": "Which component senses physical parameters?",
+      "options": [
+        "Sensor",
+        "Actuator",
+        "Microcontroller",
+        "Gateway"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Sensors detect and measure physical parameters like temperature, light, motion.",
+      "hint": "Think about detection device.",
+      "difficulty": "easy",
+      "topic": "IoT Components"
+    },
+    {
+      "id": 3,
+      "text": "What is an actuator in IoT?",
+      "options": [
+        "Device that performs actions",
+        "Device that senses",
+        "Communication device",
+        "Storage device"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Actuator performs physical actions based on control signals (e.g., motor, valve, switch).",
+      "hint": "Think about action performer.",
+      "difficulty": "easy",
+      "topic": "IoT Components"
+    },
+    {
+      "id": 4,
+      "text": "Which protocol is commonly used in IoT?",
+      "options": [
+        "MQTT",
+        "HTTP",
+        "FTP",
+        "SMTP"
+      ],
+      "correctAnswer": 0,
+      "explanation": "MQTT (Message Queuing Telemetry Transport) is lightweight protocol for IoT device communication.",
+      "hint": "Think about lightweight messaging.",
+      "difficulty": "medium",
+      "topic": "IoT Protocols"
+    },
+    {
+      "id": 5,
+      "text": "What is a microcontroller?",
+      "options": [
+        "Small computer on single chip",
+        "Large server",
+        "Network router",
+        "Cloud server"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Microcontroller is small computer on single integrated circuit, used in IoT devices.",
+      "hint": "Think about embedded computer.",
+      "difficulty": "medium",
+      "topic": "Hardware"
+    },
+    {
+      "id": 6,
+      "text": "Which wireless technology has short range?",
+      "options": [
+        "Bluetooth",
+        "Wi-Fi",
+        "Cellular",
+        "Satellite"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bluetooth has short range (typically up to 10 meters) for personal area networks.",
+      "hint": "Think about personal area network.",
+      "difficulty": "easy",
+      "topic": "Wireless Technologies"
+    },
+    {
+      "id": 7,
+      "text": "What is edge computing in IoT?",
+      "options": [
+        "Processing data near source",
+        "Processing in cloud only",
+        "No processing",
+        "Manual processing"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Edge computing processes data near source (device/edge) rather than sending to cloud.",
+      "hint": "Think about local processing.",
+      "difficulty": "medium",
+      "topic": "IoT Architecture"
+    },
+    {
+      "id": 8,
+      "text": "Which is a common IoT platform?",
+      "options": [
+        "AWS IoT",
+        "Windows OS",
+        "Linux server",
+        "Database"
+      ],
+      "correctAnswer": 0,
+      "explanation": "AWS IoT is cloud platform for IoT devices and applications.",
+      "hint": "Think about cloud IoT service.",
+      "difficulty": "medium",
+      "topic": "IoT Platforms"
+    },
+    {
+      "id": 9,
+      "text": "What is RFID?",
+      "options": [
+        "Radio Frequency Identification",
+        "Radio Frequency Internet Device",
+        "Remote Frequency Identification",
+        "Remote Frequency Internet Device"
+      ],
+      "correctAnswer": 0,
+      "explanation": "RFID uses radio waves to identify and track tags attached to objects.",
+      "hint": "Think about radio-based identification.",
+      "difficulty": "medium",
+      "topic": "Technologies"
+    },
+    {
+      "id": 10,
+      "text": "Which protocol is for low-power IoT?",
+      "options": [
+        "LoRaWAN",
+        "HTTP",
+        "FTP",
+        "SMTP"
+      ],
+      "correctAnswer": 0,
+      "explanation": "LoRaWAN is LPWAN (Low Power Wide Area Network) protocol for IoT devices.",
+      "hint": "Think about low-power wide area.",
+      "difficulty": "hard",
+      "topic": "IoT Protocols"
+    },
+    {
+      "id": 11,
+      "text": "What is smart home?",
+      "options": [
+        "IoT-enabled home automation",
+        "Traditional home",
+        "Office building",
+        "Factory"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Smart home uses IoT devices for home automation (lighting, security, appliances).",
+      "hint": "Think about automated home.",
+      "difficulty": "easy",
+      "topic": "Applications"
+    },
+    {
+      "id": 12,
+      "text": "Which component connects IoT to internet?",
+      "options": [
+        "Gateway",
+        "Sensor",
+        "Actuator",
+        "Microcontroller"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Gateway connects IoT devices to cloud/internet, often translating protocols.",
+      "hint": "Think about connection bridge.",
+      "difficulty": "medium",
+      "topic": "IoT Architecture"
+    },
+    {
+      "id": 13,
+      "text": "What is data analytics in IoT?",
+      "options": [
+        "Analyzing IoT-generated data",
+        "Storing data only",
+        "Collecting data only",
+        "Ignoring data"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IoT data analytics extracts insights from data generated by IoT devices.",
+      "hint": "Think about data insights.",
+      "difficulty": "medium",
+      "topic": "Data Processing"
+    },
+    {
+      "id": 14,
+      "text": "Which is a wireless sensor network?",
+      "options": [
+        "Collection of sensors communicating wirelessly",
+        "Wired sensors",
+        "Single sensor",
+        "Manual sensors"
+      ],
+      "correctAnswer": 0,
+      "explanation": "WSN is network of spatially distributed sensors that communicate wirelessly.",
+      "hint": "Think about sensor network.",
+      "difficulty": "hard",
+      "topic": "Networks"
+    },
+    {
+      "id": 15,
+      "text": "What is Zigbee?",
+      "options": [
+        "Wireless mesh networking standard",
+        "Wired protocol",
+        "Internet protocol",
+        "Database system"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Zigbee is wireless mesh networking standard for low-power, low-data-rate applications.",
+      "hint": "Think about mesh networking.",
+      "difficulty": "hard",
+      "topic": "Wireless Technologies"
+    },
+    {
+      "id": 16,
+      "text": "Which is an IoT security concern?",
+      "options": [
+        "Device hacking",
+        "Device color",
+        "Device size",
+        "Device weight"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IoT security concerns include device hacking, data breaches, and unauthorized access.",
+      "hint": "Think about security risks.",
+      "difficulty": "medium",
+      "topic": "Security"
+    },
+    {
+      "id": 17,
+      "text": "What is predictive maintenance?",
+      "options": [
+        "Predicting equipment failures",
+        "Regular maintenance",
+        "Emergency repairs",
+        "No maintenance"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Predictive maintenance uses IoT sensors to predict equipment failures before they occur.",
+      "hint": "Think about failure prediction.",
+      "difficulty": "medium",
+      "topic": "Applications"
+    },
+    {
+      "id": 18,
+      "text": "Which frequency band does Wi-Fi use?",
+      "options": [
+        "2.4 GHz and 5 GHz",
+        "900 MHz",
+        "AM radio",
+        "FM radio"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Wi-Fi commonly uses 2.4 GHz and 5 GHz frequency bands.",
+      "hint": "Think about common Wi-Fi bands.",
+      "difficulty": "easy",
+      "topic": "Wireless Technologies"
+    },
+    {
+      "id": 19,
+      "text": "What is cloud computing in IoT?",
+      "options": [
+        "Processing/storing data in cloud",
+        "Local processing only",
+        "No processing",
+        "Manual processing"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cloud computing in IoT processes and stores data on remote cloud servers.",
+      "hint": "Think about remote processing.",
+      "difficulty": "easy",
+      "topic": "IoT Architecture"
+    },
+    {
+      "id": 20,
+      "text": "Which is an example of Industrial IoT?",
+      "options": [
+        "Smart factory",
+        "Smart watch",
+        "Smart thermostat",
+        "Smart light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IIoT (Industrial IoT) includes smart factories, predictive maintenance, supply chain optimization.",
+      "hint": "Think about industrial applications.",
+      "difficulty": "medium",
+      "topic": "Applications"
+    },
+    {
+      "id": 21,
+      "text": "What is latency in IoT?",
+      "options": [
+        "Time delay in data transmission",
+        "Data speed",
+        "Data size",
+        "Data type"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Latency is time delay between data transmission and reception in IoT systems.",
+      "hint": "Think about time delay.",
+      "difficulty": "medium",
+      "topic": "Performance"
+    },
+    {
+      "id": 22,
+      "text": "Which protocol is for constrained devices?",
+      "options": [
+        "CoAP",
+        "HTTP",
+        "FTP",
+        "SMTP"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CoAP (Constrained Application Protocol) is designed for constrained IoT devices.",
+      "hint": "Think about constrained device protocol.",
+      "difficulty": "hard",
+      "topic": "IoT Protocols"
+    },
+    {
+      "id": 23,
+      "text": "What is digital twin?",
+      "options": [
+        "Virtual replica of physical device",
+        "Physical device only",
+        "Manual record",
+        "Paper documentation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Digital twin is virtual replica of physical device/system for simulation and analysis.",
+      "hint": "Think about virtual copy.",
+      "difficulty": "hard",
+      "topic": "Advanced Concepts"
+    },
+    {
+      "id": 24,
+      "text": "Which technology uses light for communication?",
+      "options": [
+        "Li-Fi",
+        "Wi-Fi",
+        "Bluetooth",
+        "Zigbee"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Li-Fi uses visible light for wireless communication instead of radio waves.",
+      "hint": "Think about light-based communication.",
+      "difficulty": "hard",
+      "topic": "Wireless Technologies"
+    },
+    {
+      "id": 25,
+      "text": "What is firmware in IoT?",
+      "options": [
+        "Software embedded in hardware",
+        "Cloud software",
+        "Mobile app",
+        "Web application"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Firmware is software programmed into IoT device's read-only memory.",
+      "hint": "Think about embedded software.",
+      "difficulty": "medium",
+      "topic": "Software"
+    },
+    {
+      "id": 26,
+      "text": "Which is a wearable IoT device?",
+      "options": [
+        "Smart watch",
+        "Smart refrigerator",
+        "Smart thermostat",
+        "Smart light"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Wearable IoT devices include smart watches, fitness trackers, health monitors.",
+      "hint": "Think about body-worn devices.",
+      "difficulty": "easy",
+      "topic": "Applications"
+    },
+    {
+      "id": 27,
+      "text": "What is M2M communication?",
+      "options": [
+        "Machine-to-Machine communication",
+        "Man-to-Machine communication",
+        "Machine-to-Man communication",
+        "Man-to-Man communication"
+      ],
+      "correctAnswer": 0,
+      "explanation": "M2M communication enables devices to exchange information without human intervention.",
+      "hint": "Think about device communication.",
+      "difficulty": "medium",
+      "topic": "Communication"
+    },
+    {
+      "id": 28,
+      "text": "Which is a long-range IoT protocol?",
+      "options": [
+        "NB-IoT",
+        "Bluetooth",
+        "Zigbee",
+        "Wi-Fi"
+      ],
+      "correctAnswer": 0,
+      "explanation": "NB-IoT (Narrowband IoT) is cellular technology for long-range IoT communication.",
+      "hint": "Think about cellular IoT.",
+      "difficulty": "hard",
+      "topic": "IoT Protocols"
+    },
+    {
+      "id": 29,
+      "text": "What is IoT platform?",
+      "options": [
+        "Software connecting IoT devices",
+        "Hardware device",
+        "Network cable",
+        "Power supply"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IoT platform connects hardware, handles data, and provides applications/services.",
+      "hint": "Think about IoT middleware.",
+      "difficulty": "medium",
+      "topic": "IoT Platforms"
+    },
+    {
+      "id": 30,
+      "text": "Which is a benefit of IoT?",
+      "options": [
+        "Efficiency improvement",
+        "Increased complexity",
+        "Higher costs",
+        "More manual work"
+      ],
+      "correctAnswer": 0,
+      "explanation": "IoT benefits include improved efficiency, automation, and data-driven insights.",
+      "hint": "Think about improvements.",
+      "difficulty": "easy",
+      "topic": "Benefits"
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+{
+  "subject": "Object Oriented Programming",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which of these is NOT a pillar of Object Oriented Programming?",
+      "options": [
+        "Inheritance",
+        "Polymorphism",
+        "Encapsulation",
+        "Compilation"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The four main pillars of OOP are: Encapsulation, Abstraction, Inheritance, and Polymorphism. Compilation is a process, not an OOP concept.",
+      "hint": "Think about fundamental OOP concepts.",
+      "difficulty": "easy",
+      "topic": "OOP Fundamentals"
+    },
+    {
+      "id": 2,
+      "text": "What is encapsulation in OOP?",
+      "options": [
+        "Hiding implementation details",
+        "Reusing code through inheritance",
+        "Multiple forms of a method",
+        "Creating objects from classes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Encapsulation is the bundling of data and methods that operate on that data, and restricting direct access to some of an object's components.",
+      "hint": "Think about data hiding.",
+      "difficulty": "easy",
+      "topic": "Encapsulation"
+    },
+    {
+      "id": 3,
+      "text": "Which access modifier provides the most restricted access?",
+      "options": [
+        "public",
+        "private",
+        "protected",
+        "default"
+      ],
+      "correctAnswer": 1,
+      "explanation": "private provides the most restricted access. Members declared private are accessible only within the class they are declared.",
+      "hint": "Think about visibility scope.",
+      "difficulty": "easy",
+      "topic": "Access Modifiers"
+    },
+    {
+      "id": 4,
+      "text": "What is method overloading?",
+      "options": [
+        "Same method name with different parameters",
+        "Same method name in parent and child class",
+        "Changing method implementation",
+        "Making a method abstract"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Method overloading is having multiple methods with the same name but different parameters (type, number, or order) in the same class.",
+      "hint": "Think about compile-time polymorphism.",
+      "difficulty": "medium",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 5,
+      "text": "What is inheritance in OOP?",
+      "options": [
+        "Creating new classes from existing ones",
+        "Hiding data from other classes",
+        "Multiple forms of methods",
+        "Bundling data and methods"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Inheritance is a mechanism where a new class (child/derived) is created from an existing class (parent/base), inheriting its properties and behaviors.",
+      "hint": "Think about parent-child relationship.",
+      "difficulty": "easy",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 6,
+      "text": "Which type of inheritance is not supported in Java?",
+      "options": [
+        "Single inheritance",
+        "Multiple inheritance",
+        "Multilevel inheritance",
+        "Hierarchical inheritance"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Java does not support multiple inheritance with classes (a class inheriting from multiple classes) to avoid the diamond problem, but it supports multiple inheritance with interfaces.",
+      "hint": "Think about Java's class inheritance limitations.",
+      "difficulty": "medium",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 7,
+      "text": "What is an abstract class?",
+      "options": [
+        "A class that cannot be instantiated",
+        "A class with no methods",
+        "A class with only static methods",
+        "A class that inherits from multiple classes"
+      ],
+      "correctAnswer": 0,
+      "explanation": "An abstract class is a class that cannot be instantiated and may contain abstract methods (without implementation) that must be implemented by derived classes.",
+      "hint": "Think about incomplete classes.",
+      "difficulty": "medium",
+      "topic": "Abstraction"
+    },
+    {
+      "id": 8,
+      "text": "What is the difference between abstraction and encapsulation?",
+      "options": [
+        "No difference",
+        "Abstraction hides complexity, encapsulation hides data",
+        "Encapsulation hides complexity, abstraction hides data",
+        "Both hide data only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Abstraction focuses on hiding complex implementation details and showing only essential features. Encapsulation focuses on bundling data and methods and restricting access.",
+      "hint": "Think about what each concept achieves.",
+      "difficulty": "hard",
+      "topic": "OOP Fundamentals"
+    },
+    {
+      "id": 9,
+      "text": "What is a constructor?",
+      "options": [
+        "A special method to destroy objects",
+        "A special method to initialize objects",
+        "A method to copy objects",
+        "A method to compare objects"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A constructor is a special method that is automatically called when an object is created. It initializes the object's state.",
+      "hint": "Think about object initialization.",
+      "difficulty": "easy",
+      "topic": "Constructors"
+    },
+    {
+      "id": 10,
+      "text": "Can a constructor be private?",
+      "options": [
+        "No, always public",
+        "Yes, for singleton pattern",
+        "Only in abstract classes",
+        "Only in final classes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Yes, a constructor can be private. This is often used in design patterns like Singleton to prevent instantiation from outside the class.",
+      "hint": "Think about design patterns.",
+      "difficulty": "medium",
+      "topic": "Constructors"
+    },
+    {
+      "id": 11,
+      "text": "What is method overriding?",
+      "options": [
+        "Same method name with different parameters",
+        "Redefining a parent class method in child class",
+        "Making a method static",
+        "Hiding a method implementation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Method overriding occurs when a subclass provides a specific implementation of a method that is already defined in its parent class.",
+      "hint": "Think about runtime polymorphism.",
+      "difficulty": "medium",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 12,
+      "text": "What is the 'super' keyword used for?",
+      "options": [
+        "To call parent class constructor",
+        "To call parent class methods",
+        "To refer to parent class",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "The 'super' keyword is used to refer to the parent class. It can call parent class constructors, methods, and access parent class fields.",
+      "hint": "Think about parent class reference.",
+      "difficulty": "medium",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 13,
+      "text": "What is an interface?",
+      "options": [
+        "A blueprint for classes",
+        "A class with only abstract methods",
+        "A contract for implementing classes",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "An interface is a reference type that can contain only constants, method signatures, default methods, static methods, and nested types. It provides a contract that implementing classes must follow.",
+      "hint": "Think about contracts in OOP.",
+      "difficulty": "medium",
+      "topic": "Interfaces"
+    },
+    {
+      "id": 14,
+      "text": "What is the difference between abstract class and interface?",
+      "options": [
+        "No difference",
+        "Abstract class can have implementation, interface cannot",
+        "Interface supports multiple inheritance, abstract class does not",
+        "Both B and C"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Abstract classes can have method implementations and fields, while interfaces traditionally couldn't (until Java 8). A class can implement multiple interfaces but extend only one abstract class.",
+      "hint": "Compare their capabilities.",
+      "difficulty": "hard",
+      "topic": "Abstraction"
+    },
+    {
+      "id": 15,
+      "text": "What is polymorphism?",
+      "options": [
+        "One name, multiple forms",
+        "Data hiding",
+        "Code reusability",
+        "Object creation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Polymorphism means 'many forms'. It allows methods to do different things based on the object it is acting upon.",
+      "hint": "Think about 'poly' meaning many.",
+      "difficulty": "easy",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 16,
+      "text": "What is static polymorphism?",
+      "options": [
+        "Method overloading",
+        "Method overriding",
+        "Abstract methods",
+        "Interface methods"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Static polymorphism (compile-time polymorphism) is achieved through method overloading. The method to call is determined at compile time.",
+      "hint": "Think about compile-time decisions.",
+      "difficulty": "medium",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 17,
+      "text": "What is dynamic polymorphism?",
+      "options": [
+        "Method overloading",
+        "Method overriding",
+        "Constructors",
+        "Static methods"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dynamic polymorphism (runtime polymorphism) is achieved through method overriding. The method to call is determined at runtime based on the object type.",
+      "hint": "Think about runtime decisions.",
+      "difficulty": "medium",
+      "topic": "Polymorphism"
+    },
+    {
+      "id": 18,
+      "text": "What is a final class?",
+      "options": [
+        "A class that cannot be inherited",
+        "A class that cannot have methods",
+        "A class that is abstract",
+        "A class that implements interfaces"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A final class cannot be extended (inherited). This is useful for creating immutable classes or for security reasons.",
+      "hint": "Think about preventing inheritance.",
+      "difficulty": "medium",
+      "topic": "Inheritance"
+    },
+    {
+      "id": 19,
+      "text": "What is the 'this' keyword?",
+      "options": [
+        "Refers to current object",
+        "Refers to parent object",
+        "Refers to static context",
+        "Refers to super class"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The 'this' keyword refers to the current object instance. It's used to differentiate instance variables from local variables when they have the same name.",
+      "hint": "Think about current instance reference.",
+      "difficulty": "easy",
+      "topic": "Keywords"
+    },
+    {
+      "id": 20,
+      "text": "What is composition in OOP?",
+      "options": [
+        "'has-a' relationship",
+        "'is-a' relationship",
+        "Inheritance relationship",
+        "Polymorphic relationship"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Composition is a 'has-a' relationship where one class contains an object of another class. It's generally preferred over inheritance for code reuse.",
+      "hint": "Think about object containment.",
+      "difficulty": "medium",
+      "topic": "Relationships"
+    },
+    {
+      "id": 21,
+      "text": "What is aggregation?",
+      "options": [
+        "Strong 'has-a' relationship",
+        "Weak 'has-a' relationship",
+        "'is-a' relationship",
+        "Multiple inheritance"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Aggregation is a weak 'has-a' relationship where the child can exist independently of the parent. It represents a whole-part relationship.",
+      "hint": "Think about independent existence.",
+      "difficulty": "hard",
+      "topic": "Relationships"
+    },
+    {
+      "id": 22,
+      "text": "What is a singleton pattern?",
+      "options": [
+        "A class with multiple instances",
+        "A class with no instance",
+        "A class with only one instance",
+        "A class that cannot be instantiated"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Singleton pattern ensures a class has only one instance and provides a global point of access to it. It's implemented using a private constructor and a static method.",
+      "hint": "Think about single instance.",
+      "difficulty": "medium",
+      "topic": "Design Patterns"
+    },
+    {
+      "id": 23,
+      "text": "What is a static method?",
+      "options": [
+        "Method that belongs to class, not instance",
+        "Method that cannot be overridden",
+        "Method that can access instance variables",
+        "Method that is abstract"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A static method belongs to the class rather than any object instance. It can be called without creating an instance of the class.",
+      "hint": "Think about class-level methods.",
+      "difficulty": "medium",
+      "topic": "Static"
+    },
+    {
+      "id": 24,
+      "text": "Can static methods be overridden?",
+      "options": [
+        "Yes",
+        "No, they can only be hidden",
+        "Only in abstract classes",
+        "Only in final classes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Static methods cannot be overridden because they belong to the class, not instances. They can be hidden in subclasses with a new static method.",
+      "hint": "Think about class vs instance binding.",
+      "difficulty": "hard",
+      "topic": "Static"
+    },
+    {
+      "id": 25,
+      "text": "What is a package in OOP?",
+      "options": [
+        "A namespace for organizing classes",
+        "A type of class",
+        "A collection of interfaces",
+        "A design pattern"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A package is a namespace that organizes a set of related classes and interfaces. It helps prevent naming conflicts and controls access.",
+      "hint": "Think about organization and namespaces.",
+      "difficulty": "easy",
+      "topic": "Packages"
+    },
+    {
+      "id": 26,
+      "text": "What is exception handling in OOP?",
+      "options": [
+        "Handling runtime errors",
+        "Preventing compilation errors",
+        "Managing memory",
+        "Optimizing code"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Exception handling is the process of responding to exceptional conditions (runtime errors) that require special processing.",
+      "hint": "Think about error management.",
+      "difficulty": "medium",
+      "topic": "Exception Handling"
+    },
+    {
+      "id": 27,
+      "text": "What are checked exceptions?",
+      "options": [
+        "Exceptions checked at runtime",
+        "Exceptions checked at compile time",
+        "Exceptions that are always fatal",
+        "Exceptions that cannot be caught"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Checked exceptions are checked at compile-time. The compiler ensures they are either caught or declared in the method signature.",
+      "hint": "Think about compile-time checking.",
+      "difficulty": "medium",
+      "topic": "Exception Handling"
+    },
+    {
+      "id": 28,
+      "text": "What is a thread in OOP?",
+      "options": [
+        "A lightweight process",
+        "A type of class",
+        "A design pattern",
+        "A memory allocation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A thread is a lightweight sub-process, the smallest unit of processing. Multithreading allows concurrent execution of two or more parts of a program.",
+      "hint": "Think about concurrent execution.",
+      "difficulty": "medium",
+      "topic": "Multithreading"
+    },
+    {
+      "id": 29,
+      "text": "What is garbage collection?",
+      "options": [
+        "Automatic memory management",
+        "Manual memory deallocation",
+        "Memory allocation technique",
+        "Data structure cleanup"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Garbage collection is the automatic process of identifying and freeing memory that is no longer in use by the program.",
+      "hint": "Think about automatic memory management.",
+      "difficulty": "medium",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 30,
+      "text": "What is method signature?",
+      "options": [
+        "Method name and return type",
+        "Method name and parameters",
+        "Method body",
+        "Access modifier"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A method signature consists of the method name and the parameter list (types, order, and number of parameters). Return type and exceptions are not part of the signature.",
+      "hint": "Think about what uniquely identifies a method.",
+      "difficulty": "medium",
+      "topic": "Methods"
+    }
+  ]
+}

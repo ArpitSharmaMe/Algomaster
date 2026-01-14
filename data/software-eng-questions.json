@@ -1,0 +1,457 @@
+{
+  "subject": "Software Engineering",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is software engineering?",
+      "options": [
+        "Systematic approach to software development",
+        "Writing code only",
+        "Hardware design",
+        "Network configuration"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Software engineering is systematic, disciplined approach to software development, operation, and maintenance.",
+      "hint": "Think about systematic development.",
+      "difficulty": "easy",
+      "topic": "SE Basics"
+    },
+    {
+      "id": 2,
+      "text": "Which model is linear and sequential?",
+      "options": [
+        "Waterfall",
+        "Agile",
+        "Spiral",
+        "Iterative"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Waterfall model is linear sequential approach with distinct phases.",
+      "hint": "Think about sequential phases.",
+      "difficulty": "easy",
+      "topic": "SDLC Models"
+    },
+    {
+      "id": 3,
+      "text": "What is requirement analysis?",
+      "options": [
+        "Understanding user needs",
+        "Writing code",
+        "Testing software",
+        "Deploying software"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Requirement analysis gathers and analyzes user needs and constraints.",
+      "hint": "Think about understanding needs.",
+      "difficulty": "easy",
+      "topic": "Requirements"
+    },
+    {
+      "id": 4,
+      "text": "Which testing checks individual components?",
+      "options": [
+        "Unit Testing",
+        "Integration Testing",
+        "System Testing",
+        "Acceptance Testing"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Unit testing tests individual components or modules in isolation.",
+      "hint": "Think about component testing.",
+      "difficulty": "easy",
+      "topic": "Testing"
+    },
+    {
+      "id": 5,
+      "text": "What is version control?",
+      "options": [
+        "Manage changes to source code",
+        "Control software versions",
+        "Manage team versions",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Version control manages changes to source code, tracks versions, and facilitates collaboration.",
+      "hint": "Think about code change management.",
+      "difficulty": "easy",
+      "topic": "Version Control"
+    },
+    {
+      "id": 6,
+      "text": "Which diagram shows system structure?",
+      "options": [
+        "Use Case Diagram",
+        "Class Diagram",
+        "Sequence Diagram",
+        "Activity Diagram"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Class diagram shows system structure with classes and relationships.",
+      "hint": "Think about static structure.",
+      "difficulty": "medium",
+      "topic": "UML"
+    },
+    {
+      "id": 7,
+      "text": "What is Agile methodology?",
+      "options": [
+        "Iterative and incremental approach",
+        "Linear approach",
+        "Document-heavy approach",
+        "Testing-only approach"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Agile is iterative, incremental approach emphasizing collaboration and flexibility.",
+      "hint": "Think about iterative development.",
+      "difficulty": "medium",
+      "topic": "Methodologies"
+    },
+    {
+      "id": 8,
+      "text": "Which testing checks system as whole?",
+      "options": [
+        "Unit Testing",
+        "Integration Testing",
+        "System Testing",
+        "All of the above"
+      ],
+      "correctAnswer": 2,
+      "explanation": "System testing tests complete, integrated system to ensure it meets requirements.",
+      "hint": "Think about complete system testing.",
+      "difficulty": "medium",
+      "topic": "Testing"
+    },
+    {
+      "id": 9,
+      "text": "What is software maintenance?",
+      "options": [
+        "Modifying software after delivery",
+        "Writing initial code",
+        "Planning software",
+        "Testing software"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Software maintenance modifies software after delivery to correct faults or improve performance.",
+      "hint": "Think about post-delivery modifications.",
+      "difficulty": "easy",
+      "topic": "Maintenance"
+    },
+    {
+      "id": 10,
+      "text": "Which is a functional requirement?",
+      "options": [
+        "System must process orders",
+        "System must be secure",
+        "System must be fast",
+        "System must be user-friendly"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Functional requirements specify what system should do (behavior).",
+      "hint": "Think about system behavior.",
+      "difficulty": "medium",
+      "topic": "Requirements"
+    },
+    {
+      "id": 11,
+      "text": "What is software architecture?",
+      "options": [
+        "High-level structure of software",
+        "Low-level code structure",
+        "User interface design",
+        "Database design"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Software architecture defines high-level structure and organization of software system.",
+      "hint": "Think about system structure.",
+      "difficulty": "medium",
+      "topic": "Architecture"
+    },
+    {
+      "id": 12,
+      "text": "Which testing technique uses test cases?",
+      "options": [
+        "Black-box testing",
+        "White-box testing",
+        "Gray-box testing",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "All testing techniques use test cases to verify software functionality.",
+      "hint": "Think about testing approaches.",
+      "difficulty": "medium",
+      "topic": "Testing"
+    },
+    {
+      "id": 13,
+      "text": "What is refactoring?",
+      "options": [
+        "Improving code without changing functionality",
+        "Adding new features",
+        "Fixing bugs",
+        "Rewriting from scratch"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Refactoring improves code structure without changing external behavior.",
+      "hint": "Think about code improvement.",
+      "difficulty": "medium",
+      "topic": "Code Quality"
+    },
+    {
+      "id": 14,
+      "text": "Which model uses risk analysis?",
+      "options": [
+        "Waterfall",
+        "Spiral",
+        "V-Model",
+        "Agile"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Spiral model emphasizes risk analysis throughout development.",
+      "hint": "Think about risk-driven development.",
+      "difficulty": "hard",
+      "topic": "SDLC Models"
+    },
+    {
+      "id": 15,
+      "text": "What is configuration management?",
+      "options": [
+        "Manage software versions and changes",
+        "Manage team configurations",
+        "Manage hardware configurations",
+        "Manage network configurations"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Configuration management tracks and controls changes to software throughout its lifecycle.",
+      "hint": "Think about change control.",
+      "difficulty": "hard",
+      "topic": "Configuration Management"
+    },
+    {
+      "id": 16,
+      "text": "Which testing checks interfaces between modules?",
+      "options": [
+        "Unit Testing",
+        "Integration Testing",
+        "System Testing",
+        "Acceptance Testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Integration testing tests interfaces and interaction between integrated modules.",
+      "hint": "Think about module interaction.",
+      "difficulty": "medium",
+      "topic": "Testing"
+    },
+    {
+      "id": 17,
+      "text": "What is cohesion?",
+      "options": [
+        "How closely related module elements are",
+        "Module independence",
+        "Module complexity",
+        "Module size"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Cohesion measures how closely related elements within a module are.",
+      "hint": "Think about module internal relatedness.",
+      "difficulty": "hard",
+      "topic": "Design Principles"
+    },
+    {
+      "id": 18,
+      "text": "Which is a non-functional requirement?",
+      "options": [
+        "System must be scalable",
+        "System must login users",
+        "System must calculate tax",
+        "System must generate reports"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Non-functional requirements specify system qualities like scalability, performance, security.",
+      "hint": "Think about system qualities.",
+      "difficulty": "medium",
+      "topic": "Requirements"
+    },
+    {
+      "id": 19,
+      "text": "What is software quality assurance?",
+      "options": [
+        "Process ensuring software quality",
+        "Process of testing only",
+        "Process of coding only",
+        "Process of deployment only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SQA ensures software meets quality standards throughout development lifecycle.",
+      "hint": "Think about quality processes.",
+      "difficulty": "medium",
+      "topic": "Quality Assurance"
+    },
+    {
+      "id": 20,
+      "text": "Which model has V-shape?",
+      "options": [
+        "Waterfall",
+        "V-Model",
+        "Spiral",
+        "Agile"
+      ],
+      "correctAnswer": 1,
+      "explanation": "V-Model has V-shape with development on left and testing on right.",
+      "hint": "Think about verification and validation pairing.",
+      "difficulty": "hard",
+      "topic": "SDLC Models"
+    },
+    {
+      "id": 21,
+      "text": "What is coupling?",
+      "options": [
+        "Degree of interdependence between modules",
+        "Module complexity",
+        "Module size",
+        "Module functionality"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Coupling measures degree of interdependence between software modules.",
+      "hint": "Think about module interdependence.",
+      "difficulty": "hard",
+      "topic": "Design Principles"
+    },
+    {
+      "id": 22,
+      "text": "Which testing uses automated scripts?",
+      "options": [
+        "Manual testing",
+        "Automated testing",
+        "Exploratory testing",
+        "Ad-hoc testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Automated testing uses scripts to execute tests automatically.",
+      "hint": "Think about script-based testing.",
+      "difficulty": "easy",
+      "topic": "Testing"
+    },
+    {
+      "id": 23,
+      "text": "What is use case?",
+      "options": [
+        "Interaction between user and system",
+        "System architecture",
+        "Code structure",
+        "Database schema"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Use case describes interaction between user (actor) and system to achieve goal.",
+      "hint": "Think about user-system interaction.",
+      "difficulty": "medium",
+      "topic": "Requirements"
+    },
+    {
+      "id": 24,
+      "text": "Which methodology uses sprints?",
+      "options": [
+        "Waterfall",
+        "Scrum",
+        "Spiral",
+        "V-Model"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Scrum (Agile methodology) uses sprints (time-boxed iterations).",
+      "hint": "Think about time-boxed iterations.",
+      "difficulty": "medium",
+      "topic": "Methodologies"
+    },
+    {
+      "id": 25,
+      "text": "What is code review?",
+      "options": [
+        "Systematic examination of source code",
+        "Testing code",
+        "Writing code",
+        "Deploying code"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Code review examines source code to find defects and improve quality.",
+      "hint": "Think about peer code examination.",
+      "difficulty": "medium",
+      "topic": "Code Quality"
+    },
+    {
+      "id": 26,
+      "text": "Which testing is done by end users?",
+      "options": [
+        "Unit Testing",
+        "Integration Testing",
+        "Acceptance Testing",
+        "System Testing"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Acceptance testing is done by end users to verify system meets requirements.",
+      "hint": "Think about user validation.",
+      "difficulty": "easy",
+      "topic": "Testing"
+    },
+    {
+      "id": 27,
+      "text": "What is software metric?",
+      "options": [
+        "Measure of software characteristic",
+        "Software requirement",
+        "Software design",
+        "Software test"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Software metric quantitatively measures software characteristics (size, complexity, quality).",
+      "hint": "Think about measurement.",
+      "difficulty": "hard",
+      "topic": "Metrics"
+    },
+    {
+      "id": 28,
+      "text": "Which diagram shows object interaction over time?",
+      "options": [
+        "Class Diagram",
+        "Sequence Diagram",
+        "Use Case Diagram",
+        "Activity Diagram"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sequence diagram shows object interaction over time in sequential order.",
+      "hint": "Think about time-based interaction.",
+      "difficulty": "medium",
+      "topic": "UML"
+    },
+    {
+      "id": 29,
+      "text": "What is DevOps?",
+      "options": [
+        "Integration of development and operations",
+        "Development only",
+        "Operations only",
+        "Testing only"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DevOps integrates software development and IT operations to shorten development lifecycle.",
+      "hint": "Think about development-operations integration.",
+      "difficulty": "medium",
+      "topic": "Methodologies"
+    },
+    {
+      "id": 30,
+      "text": "Which is NOT a software development activity?",
+      "options": [
+        "Requirement analysis",
+        "Coding",
+        "Hardware manufacturing",
+        "Testing"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Hardware manufacturing is not a software development activity.",
+      "hint": "Think about software vs hardware.",
+      "difficulty": "easy",
+      "topic": "SE Basics"
+    }
+  ]
+}

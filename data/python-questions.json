@@ -1,0 +1,457 @@
+{
+  "subject": "Python Programming",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which of these is NOT a Python data type?",
+      "options": [
+        "list",
+        "tuple",
+        "array",
+        "dictionary"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Python has list, tuple, and dictionary as built-in data types. 'array' is not a built-in type (though array module exists).",
+      "hint": "Think about Python's built-in collections.",
+      "difficulty": "easy",
+      "topic": "Data Types"
+    },
+    {
+      "id": 2,
+      "text": "What does the 'len()' function return for a string 'Python'?",
+      "options": [
+        "5",
+        "6",
+        "7",
+        "Throws error"
+      ],
+      "correctAnswer": 1,
+      "explanation": "len() returns the number of characters in a string. 'Python' has 6 characters.",
+      "hint": "Count the characters.",
+      "difficulty": "easy",
+      "topic": "Strings"
+    },
+    {
+      "id": 3,
+      "text": "Which keyword is used to define a function in Python?",
+      "options": [
+        "def",
+        "function",
+        "func",
+        "define"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Functions in Python are defined using the 'def' keyword followed by the function name and parentheses.",
+      "hint": "Think about function definition syntax.",
+      "difficulty": "easy",
+      "topic": "Functions"
+    },
+    {
+      "id": 4,
+      "text": "What is the output of: print(3 * 'ab')",
+      "options": [
+        "ababab",
+        "3ab",
+        "ab3",
+        "Error"
+      ],
+      "correctAnswer": 0,
+      "explanation": "In Python, multiplying a string by an integer repeats the string that many times: 'ab' * 3 = 'ababab'.",
+      "hint": "Think about string multiplication.",
+      "difficulty": "easy",
+      "topic": "Strings"
+    },
+    {
+      "id": 5,
+      "text": "Which of these is mutable in Python?",
+      "options": [
+        "tuple",
+        "string",
+        "list",
+        "frozenset"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Lists are mutable (can be changed), while tuples, strings, and frozensets are immutable.",
+      "hint": "Think about which can be modified after creation.",
+      "difficulty": "medium",
+      "topic": "Data Types"
+    },
+    {
+      "id": 6,
+      "text": "What does list comprehension do?",
+      "options": [
+        "Creates lists using loops",
+        "Reads list documentation",
+        "Sorts lists",
+        "Deletes list elements"
+      ],
+      "correctAnswer": 0,
+      "explanation": "List comprehension provides a concise way to create lists by applying an expression to each item in an iterable.",
+      "hint": "Think about compact list creation.",
+      "difficulty": "medium",
+      "topic": "Lists"
+    },
+    {
+      "id": 7,
+      "text": "Which module is used for regular expressions?",
+      "options": [
+        "regex",
+        "re",
+        "regexp",
+        "pyregex"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The 're' module provides regular expression matching operations in Python.",
+      "hint": "Think about standard library modules.",
+      "difficulty": "easy",
+      "topic": "Modules"
+    },
+    {
+      "id": 8,
+      "text": "What is PEP 8?",
+      "options": [
+        "Python Enhancement Proposal for style guide",
+        "Python Error Protocol",
+        "Package manager",
+        "Python compiler"
+      ],
+      "correctAnswer": 0,
+      "explanation": "PEP 8 is Python Enhancement Proposal that provides coding conventions and style guide for Python code.",
+      "hint": "Think about code style guidelines.",
+      "difficulty": "medium",
+      "topic": "Python Basics"
+    },
+    {
+      "id": 9,
+      "text": "Which is used for exception handling?",
+      "options": [
+        "try-except",
+        "catch-throw",
+        "error-handle",
+        "exception-catch"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Python uses try-except blocks for exception handling. Code that might raise an exception goes in try block, and handling code goes in except block.",
+      "hint": "Think about Python's exception syntax.",
+      "difficulty": "easy",
+      "topic": "Exception Handling"
+    },
+    {
+      "id": 10,
+      "text": "What does the 'with' statement do?",
+      "options": [
+        "Context management",
+        "Loop control",
+        "Function definition",
+        "Import modules"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The 'with' statement is used for context management, ensuring proper acquisition and release of resources (like files).",
+      "hint": "Think about resource management.",
+      "difficulty": "medium",
+      "topic": "File Handling"
+    },
+    {
+      "id": 11,
+      "text": "Which method is called when an object is created?",
+      "options": [
+        "__init__",
+        "__str__",
+        "__new__",
+        "__create__"
+      ],
+      "correctAnswer": 0,
+      "explanation": "__init__ is the constructor method that initializes a newly created object.",
+      "hint": "Think about object initialization.",
+      "difficulty": "easy",
+      "topic": "OOP"
+    },
+    {
+      "id": 12,
+      "text": "What is a lambda function?",
+      "options": [
+        "Anonymous function",
+        "Named function",
+        "Recursive function",
+        "Generator function"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Lambda functions are anonymous functions defined with the lambda keyword, used for short, throwaway functions.",
+      "hint": "Think about functions without names.",
+      "difficulty": "medium",
+      "topic": "Functions"
+    },
+    {
+      "id": 13,
+      "text": "Which is used to install Python packages?",
+      "options": [
+        "pip",
+        "python-install",
+        "package-get",
+        "install-py"
+      ],
+      "correctAnswer": 0,
+      "explanation": "pip is the package installer for Python, used to install packages from the Python Package Index (PyPI).",
+      "hint": "Think about Python package manager.",
+      "difficulty": "easy",
+      "topic": "Packages"
+    },
+    {
+      "id": 14,
+      "text": "What does @staticmethod decorator do?",
+      "options": [
+        "Makes method callable without instance",
+        "Makes method private",
+        "Makes method abstract",
+        "Makes method faster"
+      ],
+      "correctAnswer": 0,
+      "explanation": "@staticmethod decorator defines a static method that belongs to the class rather than instance, callable without creating an object.",
+      "hint": "Think about class-level methods.",
+      "difficulty": "medium",
+      "topic": "Decorators"
+    },
+    {
+      "id": 15,
+      "text": "What is the output of: bool('False')",
+      "options": [
+        "False",
+        "True",
+        "Error",
+        "None"
+      ],
+      "correctAnswer": 1,
+      "explanation": "bool() converts values to boolean. Non-empty strings are True, even if the string contains 'False'.",
+      "hint": "Think about truthy values.",
+      "difficulty": "medium",
+      "topic": "Type Conversion"
+    },
+    {
+      "id": 16,
+      "text": "Which is used to iterate with index?",
+      "options": [
+        "enumerate()",
+        "range()",
+        "zip()",
+        "map()"
+      ],
+      "correctAnswer": 0,
+      "explanation": "enumerate() adds a counter to an iterable and returns it as enumerate object, useful for getting index while iterating.",
+      "hint": "Think about getting both index and value.",
+      "difficulty": "medium",
+      "topic": "Iteration"
+    },
+    {
+      "id": 17,
+      "text": "What does 'self' refer to in Python class methods?",
+      "options": [
+        "Instance of the class",
+        "Class itself",
+        "Parent class",
+        "Global scope"
+      ],
+      "correctAnswer": 0,
+      "explanation": "'self' refers to the instance of the class. It's used to access variables and methods associated with the current object.",
+      "hint": "Think about current object reference.",
+      "difficulty": "easy",
+      "topic": "OOP"
+    },
+    {
+      "id": 18,
+      "text": "Which creates a generator?",
+      "options": [
+        "Using yield keyword",
+        "Using return keyword",
+        "Using break keyword",
+        "Using continue keyword"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Functions that use 'yield' instead of 'return' create generators, which can yield multiple values over time.",
+      "hint": "Think about yielding values.",
+      "difficulty": "hard",
+      "topic": "Generators"
+    },
+    {
+      "id": 19,
+      "text": "What is NumPy used for?",
+      "options": [
+        "Numerical computing",
+        "Web development",
+        "GUI programming",
+        "Database access"
+      ],
+      "correctAnswer": 0,
+      "explanation": "NumPy is a library for numerical computing in Python, providing support for arrays, matrices, and mathematical functions.",
+      "hint": "Think about numerical operations.",
+      "difficulty": "easy",
+      "topic": "Libraries"
+    },
+    {
+      "id": 20,
+      "text": "What is Django?",
+      "options": [
+        "Web framework",
+        "Data analysis library",
+        "Game engine",
+        "Text editor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+      "hint": "Think about web development.",
+      "difficulty": "medium",
+      "topic": "Frameworks"
+    },
+    {
+      "id": 21,
+      "text": "Which is used for virtual environments?",
+      "options": [
+        "venv",
+        "pyenv",
+        "virtualenv",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "venv (built-in), virtualenv, and pyenv are all tools for creating isolated Python environments with their own packages.",
+      "hint": "Think about environment isolation tools.",
+      "difficulty": "medium",
+      "topic": "Development Tools"
+    },
+    {
+      "id": 22,
+      "text": "What does 'if __name__ == \"__main__\":' do?",
+      "options": [
+        "Checks if script is run directly",
+        "Imports module",
+        "Defines main function",
+        "Starts thread"
+      ],
+      "correctAnswer": 0,
+      "explanation": "This condition checks if the script is being run directly (not imported). Code under it executes only when script is run directly.",
+      "hint": "Think about module vs script execution.",
+      "difficulty": "medium",
+      "topic": "Modules"
+    },
+    {
+      "id": 23,
+      "text": "What is slicing in Python?",
+      "options": [
+        "Extracting portion of sequence",
+        "Splitting strings",
+        "Cutting lists",
+        "All of the above"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Slicing extracts a portion of a sequence (string, list, tuple) using [start:stop:step] syntax.",
+      "hint": "Think about extracting subsequences.",
+      "difficulty": "easy",
+      "topic": "Sequences"
+    },
+    {
+      "id": 24,
+      "text": "Which is NOT a Python web framework?",
+      "options": [
+        "Flask",
+        "Django",
+        "FastAPI",
+        "React"
+      ],
+      "correctAnswer": 3,
+      "explanation": "React is a JavaScript library for building user interfaces, not a Python web framework.",
+      "hint": "Think about which is not Python-based.",
+      "difficulty": "easy",
+      "topic": "Frameworks"
+    },
+    {
+      "id": 25,
+      "text": "What is pickling?",
+      "options": [
+        "Object serialization",
+        "Data compression",
+        "File encryption",
+        "Memory optimization"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Pickling is the process of converting a Python object into a byte stream for storage or transmission.",
+      "hint": "Think about object persistence.",
+      "difficulty": "hard",
+      "topic": "Serialization"
+    },
+    {
+      "id": 26,
+      "text": "Which is used for asynchronous programming?",
+      "options": [
+        "async/await",
+        "threading",
+        "multiprocessing",
+        "All of the above"
+      ],
+      "correctAnswer": 0,
+      "explanation": "async/await syntax is used for writing asynchronous code in Python. threading and multiprocessing are for parallelism.",
+      "hint": "Think about non-blocking operations.",
+      "difficulty": "hard",
+      "topic": "Concurrency"
+    },
+    {
+      "id": 27,
+      "text": "What does zip() function do?",
+      "options": [
+        "Combines multiple iterables",
+        "Compresses files",
+        "Creates archive",
+        "Encrypts data"
+      ],
+      "correctAnswer": 0,
+      "explanation": "zip() combines elements from multiple iterables into tuples, creating an iterator of tuples.",
+      "hint": "Think about combining sequences.",
+      "difficulty": "medium",
+      "topic": "Built-in Functions"
+    },
+    {
+      "id": 28,
+      "text": "Which is used for data analysis?",
+      "options": [
+        "pandas",
+        "matplotlib",
+        "seaborn",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "pandas is for data manipulation, matplotlib and seaborn are for data visualization - all used in data analysis.",
+      "hint": "Think about data science libraries.",
+      "difficulty": "medium",
+      "topic": "Data Science"
+    },
+    {
+      "id": 29,
+      "text": "What is a decorator?",
+      "options": [
+        "Function that modifies another function",
+        "Class decorator",
+        "Syntax for annotations",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Decorators are functions that modify the behavior of other functions/classes. They use @ syntax and can be applied to functions, methods, or classes.",
+      "hint": "Think about function/class modifiers.",
+      "difficulty": "hard",
+      "topic": "Decorators"
+    },
+    {
+      "id": 30,
+      "text": "What is the GIL?",
+      "options": [
+        "Global Interpreter Lock",
+        "General Input/Output Lock",
+        "Graphics Interface Layer",
+        "Global Import Lock"
+      ],
+      "correctAnswer": 0,
+      "explanation": "GIL (Global Interpreter Lock) is a mutex that protects access to Python objects, preventing multiple threads from executing Python bytecodes simultaneously.",
+      "hint": "Think about Python threading limitation.",
+      "difficulty": "hard",
+      "topic": "Concurrency"
+    }
+  ]
+}

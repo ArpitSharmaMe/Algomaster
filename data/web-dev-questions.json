@@ -1,0 +1,457 @@
+{
+  "subject": "Web Development",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What does HTML stand for?",
+      "options": [
+        "Hyper Text Markup Language",
+        "High Tech Modern Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": 0,
+      "explanation": "HTML stands for Hyper Text Markup Language, the standard markup language for creating web pages.",
+      "hint": "Think about web page structure.",
+      "difficulty": "easy",
+      "topic": "HTML"
+    },
+    {
+      "id": 2,
+      "text": "Which tag is used for the largest heading in HTML?",
+      "options": [
+        "<h6>",
+        "<h1>",
+        "<head>",
+        "<header>"
+      ],
+      "correctAnswer": 1,
+      "explanation": "<h1> is used for the largest (most important) heading, with <h2> to <h6> for progressively smaller headings.",
+      "hint": "Think about heading hierarchy.",
+      "difficulty": "easy",
+      "topic": "HTML"
+    },
+    {
+      "id": 3,
+      "text": "What does CSS stand for?",
+      "options": [
+        "Computer Style Sheets",
+        "Creative Style System",
+        "Cascading Style Sheets",
+        "Colorful Style Sheets"
+      ],
+      "correctAnswer": 2,
+      "explanation": "CSS stands for Cascading Style Sheets, used to style and layout web pages.",
+      "hint": "Think about web page styling.",
+      "difficulty": "easy",
+      "topic": "CSS"
+    },
+    {
+      "id": 4,
+      "text": "Which property is used to change text color in CSS?",
+      "options": [
+        "text-color",
+        "font-color",
+        "color",
+        "text-style"
+      ],
+      "correctAnswer": 2,
+      "explanation": "The 'color' property is used to set the color of text in CSS.",
+      "hint": "Think about basic text styling.",
+      "difficulty": "easy",
+      "topic": "CSS"
+    },
+    {
+      "id": 5,
+      "text": "Where is JavaScript code typically placed in an HTML document?",
+      "options": [
+        "<head> section",
+        "<body> section",
+        "Both A and B",
+        "External .js file only"
+      ],
+      "correctAnswer": 2,
+      "explanation": "JavaScript can be placed in <head>, <body>, or external .js files. Best practice is to place before closing </body> tag for performance.",
+      "hint": "Think about script placement options.",
+      "difficulty": "easy",
+      "topic": "JavaScript"
+    },
+    {
+      "id": 6,
+      "text": "What is the purpose of the alt attribute in <img> tag?",
+      "options": [
+        "Alternative text for screen readers",
+        "Image alignment",
+        "Image source",
+        "Image border"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The alt attribute provides alternative text for images, displayed if image fails to load and used by screen readers for accessibility.",
+      "hint": "Think about accessibility.",
+      "difficulty": "easy",
+      "topic": "HTML"
+    },
+    {
+      "id": 7,
+      "text": "Which CSS property controls element spacing?",
+      "options": [
+        "margin",
+        "padding",
+        "border",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "margin (outside spacing), padding (inside spacing), and border all contribute to element spacing and layout.",
+      "hint": "Think about box model.",
+      "difficulty": "medium",
+      "topic": "CSS"
+    },
+    {
+      "id": 8,
+      "text": "What does DOM stand for?",
+      "options": [
+        "Document Object Model",
+        "Data Object Model",
+        "Digital Output Management",
+        "Display Object Method"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DOM stands for Document Object Model, a programming interface for HTML/XML documents representing structure as a tree of objects.",
+      "hint": "Think about document representation.",
+      "difficulty": "medium",
+      "topic": "JavaScript"
+    },
+    {
+      "id": 9,
+      "text": "Which method is used to select an element by ID in JavaScript?",
+      "options": [
+        "document.querySelector()",
+        "document.getElementById()",
+        "document.getElementByClass()",
+        "Both A and B"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Both document.getElementById() and document.querySelector('#id') can select elements by ID.",
+      "hint": "Think about element selection methods.",
+      "difficulty": "easy",
+      "topic": "JavaScript"
+    },
+    {
+      "id": 10,
+      "text": "What is responsive web design?",
+      "options": [
+        "Design that adapts to different screen sizes",
+        "Fast-loading websites",
+        "Interactive websites",
+        "SEO-optimized websites"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Responsive web design creates websites that adapt layout and content to different screen sizes and devices.",
+      "hint": "Think about mobile-friendly design.",
+      "difficulty": "medium",
+      "topic": "CSS"
+    },
+    {
+      "id": 11,
+      "text": "Which HTML5 element is used for navigation?",
+      "options": [
+        "<nav>",
+        "<navigation>",
+        "<menu>",
+        "<navbar>"
+      ],
+      "correctAnswer": 0,
+      "explanation": "<nav> is the HTML5 semantic element for navigation links.",
+      "hint": "Think about semantic HTML5 elements.",
+      "difficulty": "easy",
+      "topic": "HTML5"
+    },
+    {
+      "id": 12,
+      "text": "What does AJAX stand for?",
+      "options": [
+        "Asynchronous JavaScript and XML",
+        "Advanced JavaScript and XHTML",
+        "Asynchronous jQuery and XML",
+        "Automated JavaScript and XHR"
+      ],
+      "correctAnswer": 0,
+      "explanation": "AJAX stands for Asynchronous JavaScript and XML, a technique for creating fast and dynamic web pages.",
+      "hint": "Think about asynchronous web requests.",
+      "difficulty": "medium",
+      "topic": "JavaScript"
+    },
+    {
+      "id": 13,
+      "text": "Which CSS framework is known for its grid system?",
+      "options": [
+        "Bootstrap",
+        "Tailwind CSS",
+        "Foundation",
+        "Bulma"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Bootstrap is particularly known for its responsive grid system based on flexbox.",
+      "hint": "Think about popular CSS frameworks.",
+      "difficulty": "medium",
+      "topic": "CSS Frameworks"
+    },
+    {
+      "id": 14,
+      "text": "What is a closure in JavaScript?",
+      "options": [
+        "Function with access to outer scope",
+        "Function that closes browser",
+        "End tag in HTML",
+        "CSS property for borders"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A closure is a function that has access to its own scope, outer function's scope, and global scope.",
+      "hint": "Think about function scope chain.",
+      "difficulty": "hard",
+      "topic": "JavaScript"
+    },
+    {
+      "id": 15,
+      "text": "Which HTTP method is used for retrieving data?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "correctAnswer": 0,
+      "explanation": "GET method is used to retrieve data from a server. It should not change server state.",
+      "hint": "Think about read operations.",
+      "difficulty": "easy",
+      "topic": "HTTP"
+    },
+    {
+      "id": 16,
+      "text": "What is the purpose of localStorage?",
+      "options": [
+        "Store data locally in browser",
+        "Store data on server",
+        "Cache web pages",
+        "Manage cookies"
+      ],
+      "correctAnswer": 0,
+      "explanation": "localStorage allows web applications to store data locally in the browser with no expiration time.",
+      "hint": "Think about client-side storage.",
+      "difficulty": "medium",
+      "topic": "JavaScript"
+    },
+    {
+      "id": 17,
+      "text": "Which CSS property creates flexible layouts?",
+      "options": [
+        "display: flex",
+        "display: grid",
+        "display: block",
+        "Both A and B"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Both Flexbox (display: flex) and CSS Grid (display: grid) create flexible, responsive layouts.",
+      "hint": "Think about modern layout systems.",
+      "difficulty": "medium",
+      "topic": "CSS"
+    },
+    {
+      "id": 18,
+      "text": "What is Node.js?",
+      "options": [
+        "JavaScript runtime environment",
+        "JavaScript framework",
+        "Package manager",
+        "Text editor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Node.js is a JavaScript runtime built on Chrome's V8 engine, allowing JavaScript to run on the server-side.",
+      "hint": "Think about server-side JavaScript.",
+      "difficulty": "medium",
+      "topic": "Backend"
+    },
+    {
+      "id": 19,
+      "text": "Which is NOT a JavaScript framework?",
+      "options": [
+        "React",
+        "Angular",
+        "Vue.js",
+        "Django"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Django is a Python web framework, not a JavaScript framework.",
+      "hint": "Think about which is not JavaScript-based.",
+      "difficulty": "easy",
+      "topic": "JavaScript Frameworks"
+    },
+    {
+      "id": 20,
+      "text": "What does SEO stand for?",
+      "options": [
+        "Search Engine Optimization",
+        "System Engineering Operations",
+        "Software Engineering Organization",
+        "Server Execution Order"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SEO stands for Search Engine Optimization, the practice of increasing website visibility in search engine results.",
+      "hint": "Think about search engines.",
+      "difficulty": "easy",
+      "topic": "Web Concepts"
+    },
+    {
+      "id": 21,
+      "text": "Which protocol is used for secure HTTP?",
+      "options": [
+        "HTTP",
+        "HTTPS",
+        "FTP",
+        "SMTP"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HTTPS (HTTP Secure) uses SSL/TLS encryption to secure data transmission between browser and server.",
+      "hint": "Think about secure web browsing.",
+      "difficulty": "easy",
+      "topic": "HTTP"
+    },
+    {
+      "id": 22,
+      "text": "What is a REST API?",
+      "options": [
+        "Architectural style for web services",
+        "Programming language",
+        "Database system",
+        "Operating system"
+      ],
+      "correctAnswer": 0,
+      "explanation": "REST (Representational State Transfer) is an architectural style for designing networked applications using HTTP methods.",
+      "hint": "Think about API design principles.",
+      "difficulty": "medium",
+      "topic": "APIs"
+    },
+    {
+      "id": 23,
+      "text": "Which CSS unit is relative to font size?",
+      "options": [
+        "px",
+        "em",
+        "rem",
+        "Both B and C"
+      ],
+      "correctAnswer": 3,
+      "explanation": "em is relative to parent element's font size, rem is relative to root element's font size.",
+      "hint": "Think about relative font sizing.",
+      "difficulty": "medium",
+      "topic": "CSS"
+    },
+    {
+      "id": 24,
+      "text": "What is Git used for?",
+      "options": [
+        "Version control",
+        "Code deployment",
+        "Database management",
+        "Text editing"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Git is a distributed version control system for tracking changes in source code during software development.",
+      "hint": "Think about code history tracking.",
+      "difficulty": "easy",
+      "topic": "Development Tools"
+    },
+    {
+      "id": 25,
+      "text": "Which is a NoSQL database?",
+      "options": [
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "SQLite"
+      ],
+      "correctAnswer": 2,
+      "explanation": "MongoDB is a document-based NoSQL database, while others are relational SQL databases.",
+      "hint": "Think about non-relational databases.",
+      "difficulty": "medium",
+      "topic": "Databases"
+    },
+    {
+      "id": 26,
+      "text": "What is Webpack?",
+      "options": [
+        "Module bundler",
+        "Package manager",
+        "Framework",
+        "Testing tool"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Webpack is a static module bundler for JavaScript applications that bundles JavaScript files for usage in a browser.",
+      "hint": "Think about bundling assets.",
+      "difficulty": "hard",
+      "topic": "Build Tools"
+    },
+    {
+      "id": 27,
+      "text": "What does CORS stand for?",
+      "options": [
+        "Cross-Origin Resource Sharing",
+        "Cross-Origin Request Security",
+        "Client Origin Resource Sharing",
+        "Cross-Origin Response Security"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CORS (Cross-Origin Resource Sharing) is a mechanism that allows restricted resources to be requested from another domain.",
+      "hint": "Think about cross-domain requests.",
+      "difficulty": "hard",
+      "topic": "Web Security"
+    },
+    {
+      "id": 28,
+      "text": "Which is a CSS preprocessor?",
+      "options": [
+        "Sass",
+        "Less",
+        "Stylus",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Sass, Less, and Stylus are all CSS preprocessors that extend CSS with features like variables, nesting, and mixins.",
+      "hint": "Think about enhanced CSS languages.",
+      "difficulty": "medium",
+      "topic": "CSS"
+    },
+    {
+      "id": 29,
+      "text": "What is JWT?",
+      "options": [
+        "JSON Web Token",
+        "JavaScript Web Token",
+        "Java Web Template",
+        "JSON Web Template"
+      ],
+      "correctAnswer": 0,
+      "explanation": "JWT (JSON Web Token) is a compact, URL-safe means of representing claims to be transferred between two parties.",
+      "hint": "Think about authentication tokens.",
+      "difficulty": "hard",
+      "topic": "Authentication"
+    },
+    {
+      "id": 30,
+      "text": "What is the virtual DOM?",
+      "options": [
+        "Lightweight copy of real DOM",
+        "Browser extension",
+        "CSS feature",
+        "Database concept"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Virtual DOM is a lightweight JavaScript representation of the actual DOM, used by libraries like React for efficient updates.",
+      "hint": "Think about performance optimization.",
+      "difficulty": "hard",
+      "topic": "JavaScript Frameworks"
+    }
+  ]
+}

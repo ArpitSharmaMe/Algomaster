@@ -1,0 +1,457 @@
+{
+  "subject": "Operating Systems",
+  "totalQuestions": 30,
+  "timeLimit": 1800,
+  "questions": [
+    {
+      "id": 1,
+      "text": "What is the main purpose of an operating system?",
+      "options": [
+        "Manage computer hardware and software resources",
+        "Run applications only",
+        "Provide internet connectivity",
+        "Store data permanently"
+      ],
+      "correctAnswer": 0,
+      "explanation": "OS manages computer hardware and software resources and provides common services for computer programs.",
+      "hint": "Think about resource management.",
+      "difficulty": "easy",
+      "topic": "OS Basics"
+    },
+    {
+      "id": 2,
+      "text": "Which scheduling algorithm is non-preemptive?",
+      "options": [
+        "Round Robin",
+        "Shortest Job First",
+        "Priority Scheduling",
+        "All are preemptive"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Non-preemptive SJF doesn't interrupt a process once it starts execution.",
+      "hint": "Think about non-interrupting scheduling.",
+      "difficulty": "medium",
+      "topic": "Process Scheduling"
+    },
+    {
+      "id": 3,
+      "text": "What is a process?",
+      "options": [
+        "Program in execution",
+        "Program on disk",
+        "CPU register",
+        "Memory block"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A process is a program in execution with its own memory space and system resources.",
+      "hint": "Think about executing program.",
+      "difficulty": "easy",
+      "topic": "Process Management"
+    },
+    {
+      "id": 4,
+      "text": "Which memory management technique uses pages?",
+      "options": [
+        "Paging",
+        "Segmentation",
+        "Contiguous Allocation",
+        "Buddy System"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Paging divides memory into fixed-size pages and processes into same-size frames.",
+      "hint": "Think about fixed-size memory blocks.",
+      "difficulty": "medium",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 5,
+      "text": "What is virtual memory?",
+      "options": [
+        "Extension of physical memory using disk",
+        "Faster than RAM",
+        "CPU cache",
+        "ROM memory"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Virtual memory extends physical memory using disk storage, allowing larger programs to run.",
+      "hint": "Think about memory extension.",
+      "difficulty": "medium",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 6,
+      "text": "Which is NOT an operating system?",
+      "options": [
+        "Windows",
+        "Linux",
+        "macOS",
+        "Python"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Python is a programming language, not an operating system.",
+      "hint": "Think about what controls hardware.",
+      "difficulty": "easy",
+      "topic": "OS Types"
+    },
+    {
+      "id": 7,
+      "text": "What is a deadlock?",
+      "options": [
+        "Processes waiting for each other",
+        "Memory shortage",
+        "CPU overload",
+        "Disk failure"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Deadlock occurs when two or more processes are waiting for each other to release resources.",
+      "hint": "Think about circular waiting.",
+      "difficulty": "medium",
+      "topic": "Deadlocks"
+    },
+    {
+      "id": 8,
+      "text": "Which command lists files in Linux?",
+      "options": [
+        "dir",
+        "list",
+        "ls",
+        "show"
+      ],
+      "correctAnswer": 2,
+      "explanation": "ls command lists files and directories in Linux.",
+      "hint": "Think about Linux file listing.",
+      "difficulty": "easy",
+      "topic": "Linux Commands"
+    },
+    {
+      "id": 9,
+      "text": "What is a thread?",
+      "options": [
+        "Lightweight process",
+        "Heavyweight process",
+        "Independent program",
+        "Memory segment"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Thread is a lightweight process that shares memory space with other threads in same process.",
+      "hint": "Think about execution unit within process.",
+      "difficulty": "medium",
+      "topic": "Threads"
+    },
+    {
+      "id": 10,
+      "text": "Which algorithm is used for page replacement?",
+      "options": [
+        "FCFS",
+        "SJF",
+        "LRU",
+        "Round Robin"
+      ],
+      "correctAnswer": 2,
+      "explanation": "LRU (Least Recently Used) is a common page replacement algorithm.",
+      "hint": "Think about page replacement strategies.",
+      "difficulty": "hard",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 11,
+      "text": "What is the kernel?",
+      "options": [
+        "Core of operating system",
+        "User interface",
+        "Application program",
+        "Hardware device"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Kernel is the core component of OS that manages system resources and hardware.",
+      "hint": "Think about OS core.",
+      "difficulty": "easy",
+      "topic": "Kernel"
+    },
+    {
+      "id": 12,
+      "text": "Which scheduling algorithm uses time quantum?",
+      "options": [
+        "FCFS",
+        "SJF",
+        "Round Robin",
+        "Priority"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Round Robin uses time quantum (time slice) for preemptive scheduling.",
+      "hint": "Think about time-sliced scheduling.",
+      "difficulty": "medium",
+      "topic": "Process Scheduling"
+    },
+    {
+      "id": 13,
+      "text": "What is a semaphore?",
+      "options": [
+        "Synchronization tool",
+        "Memory address",
+        "Process identifier",
+        "File descriptor"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Semaphore is a synchronization tool used to control access to shared resources.",
+      "hint": "Think about process synchronization.",
+      "difficulty": "hard",
+      "topic": "Synchronization"
+    },
+    {
+      "id": 14,
+      "text": "Which is a multi-user OS?",
+      "options": [
+        "DOS",
+        "Windows 95",
+        "Linux",
+        "All of the above"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Linux is a multi-user OS that allows multiple users to use system simultaneously.",
+      "hint": "Think about concurrent user support.",
+      "difficulty": "easy",
+      "topic": "OS Types"
+    },
+    {
+      "id": 15,
+      "text": "What is thrashing?",
+      "options": [
+        "Excessive paging",
+        "Fast execution",
+        "Memory allocation",
+        "Disk fragmentation"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Thrashing occurs when system spends more time paging than executing processes.",
+      "hint": "Think about excessive page faults.",
+      "difficulty": "hard",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 16,
+      "text": "Which command shows current directory in Linux?",
+      "options": [
+        "cd",
+        "pwd",
+        "ls",
+        "dir"
+      ],
+      "correctAnswer": 1,
+      "explanation": "pwd (print working directory) shows current directory path.",
+      "hint": "Think about directory path display.",
+      "difficulty": "easy",
+      "topic": "Linux Commands"
+    },
+    {
+      "id": 17,
+      "text": "What is context switching?",
+      "options": [
+        "Saving/restoring process state",
+        "Changing CPU",
+        "Swapping memory",
+        "Changing OS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Context switching saves state of current process and loads state of new process.",
+      "hint": "Think about process state transition.",
+      "difficulty": "medium",
+      "topic": "Process Management"
+    },
+    {
+      "id": 18,
+      "text": "Which file system is used by Windows?",
+      "options": [
+        "EXT4",
+        "NTFS",
+        "HFS+",
+        "FAT32"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NTFS (New Technology File System) is primary file system for modern Windows.",
+      "hint": "Think about Windows file system.",
+      "difficulty": "easy",
+      "topic": "File Systems"
+    },
+    {
+      "id": 19,
+      "text": "What is a system call?",
+      "options": [
+        "Program request to OS kernel",
+        "Function call within program",
+        "Hardware interrupt",
+        "Network request"
+      ],
+      "correctAnswer": 0,
+      "explanation": "System call is program's request to OS kernel for service.",
+      "hint": "Think about program-to-kernel request.",
+      "difficulty": "medium",
+      "topic": "System Calls"
+    },
+    {
+      "id": 20,
+      "text": "Which algorithm can cause starvation?",
+      "options": [
+        "FCFS",
+        "Round Robin",
+        "Priority Scheduling",
+        "Shortest Job First"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Priority Scheduling can cause starvation if low-priority processes never get CPU.",
+      "hint": "Think about indefinite waiting.",
+      "difficulty": "hard",
+      "topic": "Process Scheduling"
+    },
+    {
+      "id": 21,
+      "text": "What is fragmentation?",
+      "options": [
+        "Memory space wasted between allocations",
+        "File corruption",
+        "Disk failure",
+        "Process crash"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Fragmentation is wasted memory space between allocated memory blocks.",
+      "hint": "Think about memory waste.",
+      "difficulty": "medium",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 22,
+      "text": "Which command kills a process in Linux?",
+      "options": [
+        "stop",
+        "kill",
+        "end",
+        "terminate"
+      ],
+      "correctAnswer": 1,
+      "explanation": "kill command sends signal to terminate a process in Linux.",
+      "hint": "Think about process termination.",
+      "difficulty": "easy",
+      "topic": "Linux Commands"
+    },
+    {
+      "id": 23,
+      "text": "What is a real-time OS?",
+      "options": [
+        "OS with strict timing constraints",
+        "Fast OS",
+        "Current OS version",
+        "Virtual OS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Real-time OS guarantees response within strict time constraints for critical applications.",
+      "hint": "Think about time-critical applications.",
+      "difficulty": "medium",
+      "topic": "OS Types"
+    },
+    {
+      "id": 24,
+      "text": "Which is a necessary condition for deadlock?",
+      "options": [
+        "Mutual Exclusion",
+        "Hold and Wait",
+        "No Preemption",
+        "All of the above"
+      ],
+      "correctAnswer": 3,
+      "explanation": "All four conditions (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait) are necessary for deadlock.",
+      "hint": "Think about Coffman conditions.",
+      "difficulty": "hard",
+      "topic": "Deadlocks"
+    },
+    {
+      "id": 25,
+      "text": "What is swapping?",
+      "options": [
+        "Moving process between memory and disk",
+        "Switching CPU cores",
+        "Exchanging files",
+        "Changing OS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Swapping moves processes between main memory and disk.",
+      "hint": "Think about memory-disk transfer.",
+      "difficulty": "medium",
+      "topic": "Memory Management"
+    },
+    {
+      "id": 26,
+      "text": "Which command changes file permissions in Linux?",
+      "options": [
+        "chmod",
+        "chown",
+        "perm",
+        "access"
+      ],
+      "correctAnswer": 0,
+      "explanation": "chmod command changes file permissions in Linux.",
+      "hint": "Think about permission modification.",
+      "difficulty": "easy",
+      "topic": "Linux Commands"
+    },
+    {
+      "id": 27,
+      "text": "What is spooling?",
+      "options": [
+        "Simultaneous Peripheral Operations Online",
+        "Memory allocation technique",
+        "Process scheduling",
+        "File system"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Spooling (Simultaneous Peripheral Operations Online) buffers data for devices like printers.",
+      "hint": "Think about print spooler.",
+      "difficulty": "medium",
+      "topic": "I/O Systems"
+    },
+    {
+      "id": 28,
+      "text": "Which scheduler has shortest execution time?",
+      "options": [
+        "Long-term scheduler",
+        "Short-term scheduler",
+        "Medium-term scheduler",
+        "All are equal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Short-term scheduler (CPU scheduler) has shortest execution time, invoked frequently.",
+      "hint": "Think about frequent scheduling.",
+      "difficulty": "hard",
+      "topic": "Process Scheduling"
+    },
+    {
+      "id": 29,
+      "text": "What is a zombie process?",
+      "options": [
+        "Terminated but not reaped",
+        "Running process",
+        "Sleeping process",
+        "New process"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Zombie process has terminated but its parent hasn't read its exit status.",
+      "hint": "Think about terminated but not cleaned up.",
+      "difficulty": "hard",
+      "topic": "Process Management"
+    },
+    {
+      "id": 30,
+      "text": "Which is a distributed OS?",
+      "options": [
+        "Manages multiple computers as single system",
+        "Single computer OS",
+        "Real-time OS",
+        "Batch OS"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Distributed OS manages group of independent computers as single system.",
+      "hint": "Think about multiple computer coordination.",
+      "difficulty": "hard",
+      "topic": "OS Types"
+    }
+  ]
+}
