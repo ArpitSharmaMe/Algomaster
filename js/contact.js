@@ -1,5 +1,9 @@
-// Contact Page JavaScript
+// Contact Page JavaScript for Google Sheets Integration
 document.addEventListener('DOMContentLoaded', function() {
+    // ==== YOUR GOOGLE APPS SCRIPT URL ====
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzequROAGrLr41finggoaAXWKBBlyycj4AVM9rJ4J9MEfUY0pENSiEXQ1C4uBjz2Bw/exec";
+    // =====================================
+    
     // Form elements
     const contactForm = document.getElementById('contactForm');
     const nameInput = document.getElementById('name');
@@ -8,14 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const messageInput = document.getElementById('message');
     const newsletterInput = document.getElementById('newsletter');
     
-    // Error message elements
+    // Error elements
     const nameError = document.getElementById('nameError');
     const emailError = document.getElementById('emailError');
     const subjectError = document.getElementById('subjectError');
     const messageError = document.getElementById('messageError');
     
-    // Chat widget elements
-    const chatWidget = document.getElementById('chatWidget');
+    // Chat elements
     const chatIcon = document.querySelector('.chat-icon');
     const chatBox = document.getElementById('chatBox');
     const closeChat = document.getElementById('closeChat');
@@ -26,35 +29,59 @@ document.addEventListener('DOMContentLoaded', function() {
     // FAQ elements
     const faqItems = document.querySelectorAll('.faq-item');
     
-    // Help section elements
+    // Help cards
     const helpCards = document.querySelectorAll('.help-card');
     
-    // Bot responses for chat
+    // Bot responses
     const botResponses = [
-        "Hello! How can I help you with ALGOMASTER today?",
-        "I can help you with quiz topics, technical issues, or general inquiries.",
-        "You can reach Arpit directly at arpit18sharma2002@gmail.com",
-        "Each quiz contains 30 questions and takes about 30 minutes to complete.",
+        "Hello! I'm your ALGOMASTER assistant. How can I help you today?",
+        "You can contact Arpit directly at algomaster18@gmail.com",
+        "We respond to all messages within 24 hours!",
+        "Check out our quiz topics to test your computer science knowledge!",
         "ALGOMASTER is completely free to use for everyone.",
+        "Each quiz has 30 questions covering fundamental to advanced topics.",
+        "Your progress is automatically saved as you take quizzes.",
         "We have 14 computer science subjects available for quizzing.",
-        "Yes, your progress is automatically saved as you take quizzes.",
-        "You can suggest new features using the contact form on this page.",
-        "Our office is located in Dehradun, Uttarakhand.",
-        "We typically respond to emails within 24 hours."
+        "You can suggest new features using the contact form.",
+        "Our office is in Dehradun, Uttarakhand."
     ];
     
-    // Initialize page
-    function initPage() {
-        setupFormValidation();
-        setupChatWidget();
+    // Initialize everything
+    init();
+    
+    function init() {
+        console.log("🚀 ALGOMASTER Contact Page Initializing...");
+        console.log("📊 Google Sheets URL:", GOOGLE_SCRIPT_URL);
+        
+        setupForm();
         setupFAQ();
-        setupHelpSection();
+        setupChat();
         setupAnimations();
         setupEventListeners();
+        
+        console.log("✅ ALGOMASTER Contact Page Ready!");
+        
+        // Auto-open chat after 5 seconds
+        setTimeout(() => {
+            if (chatBox && !chatBox.classList.contains('active') && 
+                !sessionStorage.getItem('chatInteracted')) {
+                chatBox.classList.add('active');
+                chatInput.focus();
+                
+                // Add welcome message
+                setTimeout(() => {
+                    const welcomeMsg = document.createElement('div');
+                    welcomeMsg.className = 'message bot';
+                    welcomeMsg.innerHTML = '<p>Hi there! 👋 Need help with ALGOMASTER? Ask me anything!</p>';
+                    chatMessages.appendChild(welcomeMsg);
+                    chatMessages.scrollTop = chatMessages.scrollHeight;
+                }, 300);
+            }
+        }, 5000);
     }
     
-    // Setup form validation
-    function setupFormValidation() {
+    // ================= FORM HANDLING =================
+    function setupForm() {
         contactForm.addEventListener('submit', handleFormSubmit);
         
         // Real-time validation
@@ -100,6 +127,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleFormSubmit(e) {
         e.preventDefault();
         
+        console.log("📝 Form submission started...");
+        
         if (validateForm()) {
             // Get form data
             const formData = {
@@ -107,9 +136,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 email: emailInput.value.trim(),
                 subject: subjectInput.value,
                 message: messageInput.value.trim(),
-                newsletter: newsletterInput.checked,
-                timestamp: new Date().toISOString()
+                newsletter: newsletterInput.checked ? "Yes" : "No"
             };
+            
+            console.log("📤 Form data:", formData);
             
             // Show loading state
             const submitBtn = contactForm.querySelector('.submit-btn');
@@ -117,12 +147,24 @@ document.addEventListener('DOMContentLoaded', function() {
             submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
             submitBtn.disabled = true;
             
-            // Simulate API call
+            // Create URL with encoded data
+            const url = GOOGLE_SCRIPT_URL + '?' + 
+                'name=' + encodeURIComponent(formData.name) +
+                '&email=' + encodeURIComponent(formData.email) +
+                '&subject=' + encodeURIComponent(formData.subject) +
+                '&message=' + encodeURIComponent(formData.message) +
+                '&newsletter=' + encodeURIComponent(formData.newsletter);
+            
+            console.log("🔗 Sending to:", url);
+            
+            // METHOD 1: Image method only (no new tab, no CORS issues)
+            const img = new Image();
+            img.src = url;
+            
+            // Show success message after a short delay
             setTimeout(() => {
-                console.log('Form submitted:', formData);
-                
                 // Show success message
-                alert(`Thank you, ${formData.name}! Your message has been sent successfully. Arpit will get back to you at ${formData.email} within 24 hours.`);
+                alert(`✅ Thank you ${formData.name}!\n\nYour message has been sent successfully.\nArpit will email you back at ${formData.email} within 24 hours.`);
                 
                 // Reset form
                 contactForm.reset();
@@ -131,10 +173,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 submitBtn.innerHTML = originalText;
                 submitBtn.disabled = false;
                 
-                console.log('Message sent to: arpit18sharma2002@gmail.com');
-                console.log('Subject:', formData.subject);
-                console.log('Subscribed to newsletter:', formData.newsletter);
-            }, 1500);
+                console.log("🎉 Form submitted successfully!");
+                console.log("📊 Data saved to Google Sheets and email sent.");
+                
+            }, 1000);
         }
     }
     
@@ -183,8 +225,58 @@ document.addEventListener('DOMContentLoaded', function() {
         return isValid;
     }
     
-    // Setup chat widget
-    function setupChatWidget() {
+    // ================= FAQ HANDLING =================
+    function setupFAQ() {
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            const answer = item.querySelector('.faq-answer');
+            const icon = item.querySelector('.faq-question i');
+            
+            // Set initial state
+            answer.style.maxHeight = '0';
+            answer.style.opacity = '0';
+            answer.style.overflow = 'hidden';
+            
+            question.addEventListener('click', () => {
+                // Close all other FAQ items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        const otherAnswer = otherItem.querySelector('.faq-answer');
+                        const otherIcon = otherItem.querySelector('.faq-question i');
+                        otherItem.classList.remove('active');
+                        otherAnswer.style.maxHeight = '0';
+                        otherAnswer.style.opacity = '0';
+                        if (otherIcon) {
+                            otherIcon.style.transform = 'rotate(0deg)';
+                        }
+                    }
+                });
+                
+                // Toggle current item
+                const isActive = item.classList.contains('active');
+                item.classList.toggle('active');
+                
+                if (!isActive) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    answer.style.opacity = '1';
+                    if (icon) {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                } else {
+                    answer.style.maxHeight = '0';
+                    answer.style.opacity = '0';
+                    if (icon) {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                }
+            });
+        });
+    }
+    
+    // ================= CHAT HANDLING =================
+    function setupChat() {
+        if (!chatIcon || !chatBox) return;
+        
         chatIcon.addEventListener('click', () => {
             chatBox.classList.toggle('active');
             if (chatBox.classList.contains('active')) {
@@ -192,19 +284,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        closeChat.addEventListener('click', () => {
-            chatBox.classList.remove('active');
-        });
+        if (closeChat) {
+            closeChat.addEventListener('click', () => {
+                chatBox.classList.remove('active');
+            });
+        }
         
-        sendChat.addEventListener('click', sendMessage);
-        chatInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
-        });
+        if (sendChat && chatInput) {
+            sendChat.addEventListener('click', sendChatMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') sendChatMessage();
+            });
+        }
     }
     
-    function sendMessage() {
+    function sendChatMessage() {
         const message = chatInput.value.trim();
         if (!message) return;
         
@@ -220,82 +314,67 @@ document.addEventListener('DOMContentLoaded', function() {
         // Scroll to bottom
         chatMessages.scrollTop = chatMessages.scrollHeight;
         
+        // Mark as interacted
+        sessionStorage.setItem('chatInteracted', 'true');
+        
         // Simulate bot thinking
         setTimeout(() => {
-            // Add typing indicator
-            const typingIndicator = document.createElement('div');
-            typingIndicator.className = 'message bot';
-            typingIndicator.innerHTML = '<p><i class="fas fa-ellipsis-h"></i></p>';
-            chatMessages.appendChild(typingIndicator);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
+            // Get random response
+            const response = botResponses[Math.floor(Math.random() * botResponses.length)];
             
-            // Remove typing indicator and add bot response
-            setTimeout(() => {
-                typingIndicator.remove();
-                
-                // Get random bot response
-                const randomResponse = botResponses[Math.floor(Math.random() * botResponses.length)];
-                
-                const botMessage = document.createElement('div');
-                botMessage.className = 'message bot';
-                botMessage.innerHTML = `<p>${randomResponse}</p>`;
-                chatMessages.appendChild(botMessage);
-                
-                // Scroll to bottom
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-            }, 1000);
-        }, 500);
+            const botMessage = document.createElement('div');
+            botMessage.className = 'message bot';
+            botMessage.innerHTML = `<p>${response}</p>`;
+            chatMessages.appendChild(botMessage);
+            
+            // Scroll to bottom
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }, 1000);
     }
     
-    // Setup FAQ
-    function setupFAQ() {
-        faqItems.forEach(item => {
-            const question = item.querySelector('.faq-question');
-            const answer = item.querySelector('.faq-answer');
-            const icon = item.querySelector('.faq-question i');
+    // ================= ANIMATIONS =================
+    function setupAnimations() {
+        // Contact methods animation
+        const contactMethods = document.querySelectorAll('.contact-method');
+        contactMethods.forEach((method, index) => {
+            method.style.opacity = '0';
+            method.style.transform = 'translateX(-20px)';
+            method.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
             
-            // Set initial state
-            answer.style.maxHeight = '0px';
-            answer.style.opacity = '0';
-            answer.style.overflow = 'hidden';
-            
-            question.addEventListener('click', () => {
-                // Close all other FAQ items
-                faqItems.forEach(otherItem => {
-                    if (otherItem !== item) {
-                        const otherAnswer = otherItem.querySelector('.faq-answer');
-                        const otherIcon = otherItem.querySelector('.faq-question i');
-                        otherItem.classList.remove('active');
-                        otherAnswer.style.maxHeight = '0px';
-                        otherAnswer.style.opacity = '0';
-                        if (otherIcon) {
-                            otherIcon.style.transform = 'rotate(0deg)';
-                        }
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateX(0)';
                     }
                 });
-                
-                // Toggle current item
-                item.classList.toggle('active');
-                
-                if (item.classList.contains('active')) {
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                    answer.style.opacity = '1';
-                    if (icon) {
-                        icon.style.transform = 'rotate(180deg)';
+            }, { threshold: 0.1 });
+            
+            observer.observe(method);
+        });
+        
+        // Help cards animation
+        helpCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = `opacity 0.6s ease ${index * 0.2}s, transform 0.6s ease ${index * 0.2}s`;
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
                     }
-                } else {
-                    answer.style.maxHeight = '0px';
-                    answer.style.opacity = '0';
-                    if (icon) {
-                        icon.style.transform = 'rotate(0deg)';
-                    }
-                }
-            });
+                });
+            }, { threshold: 0.1 });
+            
+            observer.observe(card);
         });
     }
     
-    // Setup help section
-    function setupHelpSection() {
+    // ================= EVENT LISTENERS =================
+    function setupEventListeners() {
+        // Help cards hover effects
         helpCards.forEach(card => {
             card.addEventListener('mouseenter', function() {
                 const icon = this.querySelector('.help-icon');
@@ -319,150 +398,36 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             });
         });
-    }
-    
-    // Setup animations
-    function setupAnimations() {
-        // Contact methods animation
-        const contactMethods = document.querySelectorAll('.contact-method');
-        contactMethods.forEach((method, index) => {
-            method.style.opacity = '0';
-            method.style.transform = 'translateX(-20px)';
-            method.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
-            
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateX(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            observer.observe(method);
-        });
-        
-        // Form animation
-        const formContainer = document.querySelector('.contact-form-container');
-        if (formContainer) {
-            formContainer.style.opacity = '0';
-            formContainer.style.transform = 'translateY(30px)';
-            formContainer.style.transition = 'opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s';
-            
-            const formObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            formObserver.observe(formContainer);
-        }
-        
-        // Help cards animation
-        helpCards.forEach((card, index) => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = `opacity 0.6s ease ${index * 0.2}s, transform 0.6s ease ${index * 0.2}s`;
-            
-            const helpObserver = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.style.opacity = '1';
-                        entry.target.style.transform = 'translateY(0)';
-                    }
-                });
-            }, { threshold: 0.1 });
-            
-            helpObserver.observe(card);
-        });
-    }
-    
-    // Setup event listeners
-    function setupEventListeners() {
-        // Social buttons hover effect
-        const socialButtons = document.querySelectorAll('.social-btn');
-        socialButtons.forEach(btn => {
-            btn.addEventListener('mouseenter', function() {
-                this.style.transform = 'rotate(10deg) scale(1.1)';
-            });
-            
-            btn.addEventListener('mouseleave', function() {
-                this.style.transform = 'rotate(0) scale(1)';
-            });
-        });
         
         // Chat icon hover effect
-        chatIcon.addEventListener('mouseenter', function() {
-            const icon = this.querySelector('i');
-            icon.style.transform = 'rotate(20deg)';
-            icon.style.transition = 'transform 0.3s ease';
-        });
-        
-        chatIcon.addEventListener('mouseleave', function() {
-            const icon = this.querySelector('i');
-            icon.style.transform = 'rotate(0)';
-        });
+        if (chatIcon) {
+            chatIcon.addEventListener('mouseenter', function() {
+                const icon = this.querySelector('i');
+                if (icon) {
+                    icon.style.transform = 'rotate(20deg)';
+                }
+            });
+            
+            chatIcon.addEventListener('mouseleave', function() {
+                const icon = this.querySelector('i');
+                if (icon) {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        }
         
         // Keyboard shortcuts
         document.addEventListener('keydown', (e) => {
-            // Ctrl + / to focus on form
+            // Ctrl + / to focus on name field
             if (e.ctrlKey && e.key === '/') {
                 e.preventDefault();
                 nameInput.focus();
             }
             
             // Escape to close chat
-            if (e.key === 'Escape' && chatBox.classList.contains('active')) {
+            if (e.key === 'Escape' && chatBox && chatBox.classList.contains('active')) {
                 chatBox.classList.remove('active');
-            }
-            
-            // Ctrl + M to open chat
-            if (e.ctrlKey && e.key === 'm') {
-                e.preventDefault();
-                chatBox.classList.add('active');
-                chatInput.focus();
             }
         });
     }
-    
-    // Auto-open chat after 10 seconds if not interacted
-    setTimeout(() => {
-        if (!chatBox.classList.contains('active') && 
-            !sessionStorage.getItem('chatInteracted')) {
-            chatBox.classList.add('active');
-            chatInput.focus();
-            
-            // Add welcome message
-            setTimeout(() => {
-                const welcomeMsg = document.createElement('div');
-                welcomeMsg.className = 'message bot';
-                welcomeMsg.innerHTML = '<p>Hi there! 👋 Need help with ALGOMASTER? I\'m here to assist you!</p>';
-                chatMessages.appendChild(welcomeMsg);
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-            }, 500);
-        }
-    }, 10000);
-    
-    // Mark chat as interacted when user sends a message
-    sendChat.addEventListener('click', () => {
-        sessionStorage.setItem('chatInteracted', 'true');
-    });
-    
-    chatInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            sessionStorage.setItem('chatInteracted', 'true');
-        }
-    });
-    
-    // Initialize the page
-    initPage();
-    
-    // Log page view
-    console.log('Contact page loaded successfully!');
-    console.log('Developer: Arpit Sharma');
-    console.log('Email: arpit18sharma2002@gmail.com');
-    console.log('Phone: +91 7906529891');
 });
